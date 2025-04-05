@@ -23,7 +23,7 @@ header {
 .logo {
     cursor: pointer;
     width: 150px;
-    height: 140px;
+    height: 110px;
     padding: 15px;
     flex-wrap: wrap;
     mix-blend-mode: multiply;

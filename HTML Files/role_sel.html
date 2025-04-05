@@ -1,0 +1,67 @@
+<!-- CUSTOMER OR MANAGER CHOICE FORM PAGE -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Type Selection</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    background-image: url(back.jpg);
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.role-btn {
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+.role-btn:hover {
+    background-color: #45a049;
+}
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Please select your role</h1>
+        <a href="Login_Page.html">
+            <button id="customerBtn" class="role-btn">Customer</button>
+        </a>
+        <a href="welcome_back_login.html">
+            <button id="managementBtn" class="role-btn">Management</button>
+        </a>  
+    </div>
+
+</body>
+</html>

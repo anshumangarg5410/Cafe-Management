@@ -1,0 +1,388 @@
+<!-- MENU SECTION MERCHANDISE PAGE USING BOOTSTRAP -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../Assets/logo.png">
+    <title>Brew Heaven - Bestsellers</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:wght@300;400;600&family=Pacifico&display=swap" rel="stylesheet">
+
+    <style>
+        /* General Body Styles */
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background-color: #f8f8f8;
+            color: #402E02;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://media.istockphoto.com/id/1428737062/photo/empty-wooden-table-top-with-lights-bokeh-on-blur-restaurant-background.jpg?s=612x612&w=0&k=20&c=7A8ULpWj0zOiSEaQC_PH6Ef6YbzRYW_PkZjR0xhwfEk=') center/cover no-repeat;
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            font-family: 'Lobster', sans-serif;
+            font-weight: bold;
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            max-width: 800px;
+            margin: 20px auto;
+        }
+
+        /* Product Cards */
+        .product-card {
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            background-color: #ffffff;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            width: 100%;  /* Changed for product card width */
+            height: 100%;
+            position: relative;
+        }
+
+        .product-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 220px; 
+            object-fit: cover;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+        }
+
+        .product-card img:hover {
+            transform: scale(1.1);
+        }
+
+        .product-number {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            font-size: 3rem;
+            font-family: 'Pacifico', cursive;
+            color: white;
+            z-index: 10;
+        }
+
+        .product-card h3 {
+            font-size: 1.8rem;
+            color: #7B3F00;
+            margin-top: 15px;
+        }
+
+        .product-card p {
+            color: #555;
+            margin: 10px 0;
+            font-size: 1rem;
+        }
+
+        .price {
+            font-size: 1.4rem;
+            color: #7B3F00;
+            font-weight: bold;
+        }
+
+        .product-card .btn {
+            background-color: #7B3F00;
+            color: white;
+            padding: 12px 20px;
+            border-radius: 5px;
+            text-transform: uppercase;
+            font-weight: 600;
+            width: 100%;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .product-card .btn:hover {
+            background-color: #5a2e00;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #D6BEA2;
+            color: #402E02;
+            padding: 100px 0 30px;
+            border-top-left-radius: 125px;
+            font-size: large;
+            line-height: 20px;
+        }
+
+        /* Media Queries for Footer */
+        @media (max-width: 768px) {
+            footer .row {
+                display: block;  /* Changed to block to stack on smaller screens */
+                padding-left: 0;
+            }
+
+            footer .col1, footer .col2, footer .col3, footer .col4, footer .col5, footer .col6 {
+                width: 100%;  /* Changed to 100% width for stacking */
+                padding: 0;
+                margin-bottom: 20px;
+            }
+            
+        }
+
+        /* Footer Flex Layout */
+        footer .row {
+            display: flex; /* Changed from block to flex to align columns inline */
+            flex-wrap: wrap;  /* Ensures columns wrap when necessary */
+            justify-content: space-between;
+            padding: 0 15px;
+        }
+
+        footer .col1, footer .col2, footer .col3, footer .col4, footer .col5, footer .col6 {
+            flex-basis: 16%;  /* Changed to 16% for even distribution of columns */
+            padding-left: 30px;
+        }
+
+        /* Media Queries for Product Card Layout */
+        @media (max-width: 768px) {
+            .product-card {
+                width: 100%;  /* Changed to 100% width for product cards on mobile */
+            }
+
+            .row {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;  /* Center product cards on smaller screens */
+            }
+
+            .col-md-3 {
+                flex-basis: 100%;  /* Changed to 100% width on smaller screens */
+                margin: 10px 0;
+            }
+
+            .hero h1 {
+                font-size: 3rem;
+            }
+
+            .hero p {
+                font-size: 1.1rem;
+            }
+        }
+        a {
+    color: inherit;  /* Inherits color from parent element */
+    text-decoration: none;  /* Removes the underline */
+}
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div>
+            <h1>Brew Heaven's Merchandise</h1>
+            <p>Discover our most popular items, loved by our customers. Quality products, crafted with care.</p>
+        </div>
+    </section>
+
+    <!-- Bestsellers Section -->
+    <section class="container my-5">
+        <div class="text-center mb-5">
+            <h2>Our Merchandise</h2>
+            <p>Explore the finest Merchandise at Brew Heaven, always special.</p>
+        </div>
+
+        <div class="row">
+            <!-- Product 1 -->
+            <div class="col-md-3 mb-4">
+                <div class="product-card">
+                    <span class="product-number">1</span> <!-- Badge for product number -->
+                    <img src="../Assets/shirt.jpeg" alt="Signature Espresso">
+                    <div class="p-3">
+                        <h3>Signature Espresso</h3>
+                        <p>A rich, bold espresso with a smooth finish. Perfect for a quick pick-me-up!</p>
+                        <div class="price">$3.99</div>
+                        <button class="btn mt-3">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 2 -->
+            <div class="col-md-3 mb-4">
+                <div class="product-card">
+                    <span class="product-number">2</span> <!-- Badge for product number -->
+                    <img src="../Assets/mug.jpeg" alt="Caramel Macchiato">
+                    <div class="p-3">
+                        <h3>Caramel Macchiato</h3>
+                        <p>A sweet, tasty and creamy delight with espresso and a touch of caramel.</p>
+                        <div class="price">$4.49</div>
+                        <button class="btn mt-3">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 3 -->
+            <div class="col-md-3 mb-4">
+                <div class="product-card">
+                    <span class="product-number">3</span> <!-- Badge for product number -->
+                    <img src="../Assets/togo.webp" alt="Avocado Toast">
+                    <div class="p-3">
+                        <h3>Avocado Toast</h3>
+                        <p>Freshly mashed avocado on toasted sourdough, topped with chili flakes and olive oil.</p>
+                        <div class="price">$5.99</div>
+                        <button class="btn mt-3">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 4 -->
+            <div class="col-md-3 mb-4">
+                <div class="product-card">
+                    <span class="product-number">4</span> <!-- Badge for product number -->
+                    <img src="../Assets/keychain.webp" alt="Choco lava cake">
+                    <div class="p-3">
+                        <h3>Choco Lava Cake</h3>
+                        <p>Satisfy your sweet cravings with our irresistibly rich Choco Lava Cake – where every bite oozes chocolate bliss!</p>
+                        <div class="price">$12.99</div>
+                        <button class="btn mt-3">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 5 -->
+            <div class="col-md-3 mb-4">
+                <div class="product-card">
+                    <span class="product-number">5</span> <!-- Badge for product number -->
+                    <img src="../Assets/apron.webp" alt="Order Online">
+                    <div class="p-3">
+                        <h3>Pizza</h3>
+                        <p>Convenient online ordering for pickup or delivery. Get your Brew Heaven fix today!</p>
+                        <div class="price">$6.99</div>
+                        <button class="btn mt-3">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 6 -->
+            <div class="col-md-3 mb-4">
+                <div class="product-card">
+                    <span class="product-number">6</span> <!-- Badge for product number -->
+                    <img src="../Assets/bag1.jpg" alt="Dine In Special">
+                    <div class="p-3">
+                        <h3>White Sauce Pasta</h3>
+                        <p>Enjoy a special dine-in offer at Brew Heaven. Relax and sip your favorite brew.</p>
+                        <div class="price">$6.99</div>
+                        <button class="btn mt-3">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 7 -->
+            <div class="col-md-3 mb-4">
+                <div class="product-card">
+                    <span class="product-number">7</span> <!-- Badge for product number -->
+                    <img src="../Assets/thermos.webp" alt="Chocolate Cake">
+                    <div class="p-3">
+                        <h3>Veg Whooper</h3>
+                        <p>A rich, decadent chocolate cake paired perfectly with a cup of coffee. ngch</p>
+                        <div class="price">$5.99</div>
+                        <button class="btn mt-3">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 8 -->
+            <div class="col-md-3 mb-4">
+                <div class="product-card">
+                    <span class="product-number">8</span> <!-- Badge for product number -->
+                    <img src="../Assets/cap.webp" alt="Chocolate Cake">
+                    <div class="p-3">
+                        <h3>Panini Sandwich</h3>
+                        <p>A rich, decadent chocolate cake paired perfectly with a cup of coffee. ngch</p>
+                        <div class="price">$5.99</div>
+                        <button class="btn mt-3">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer style="display: flex;">
+        <div class="row">
+            <div class="col1">
+                <img src="../Assets/logo.png" style=" width: 190px; height: 180px;
+                padding-left: 30px; padding-top: 30px; display: flex; margin-right: 0%;mix-blend-mode: multiply;">
+            </div>
+            <br>
+            <div class="col2">
+                <ul style="padding-left: 30px;">
+                    ABOUT US
+                    <br>
+                    <br>
+                    <li><a href="Wel_BrewHev.html" target="_blank">Our Company</a></li>
+                    <li><a href="Meet_Team.html" target="_blank">Our Team</a></li>
+                    <li><a href="../index.html" target="_blank">Home</a></li>
+                </ul>
+            </div>
+            <div class="col3">
+                <ul style="padding-left: 30px;">
+                    RESPONSIBILITY
+                    <br>
+                    <br>
+                    <li><a href="Commitment.html" target="_blank">Diversity</a></li>
+                    <li>Community</li>
+                    <li>Ethical Sourcing</li>
+                    <li>Environmental Ownership</li>
+                    <li>Learn more</li>
+                </ul>
+            </div>
+            <div class="col4">
+                <ul style="padding-left: 30px;">
+                    QUICK LINKS
+                    <br>
+                    <br>
+                    <li>Privacy Policy</li>
+                    <li>Faqs</li>
+                    <li>Customer Service</li>
+                    <li>Delivery</li>
+                    <li>Ownership</li>
+                    <li>Subscription</li>
+                </ul>
+            </div>
+            <div class="col5">
+                <ul style="margin: 0%; display: inline;">
+                    SOCIAL MEDIA
+                    <br>
+                    <br>
+                    <a href="https://www.facebook.com/">
+                        <img src="../Assets/facebook.png" style="width: 50px; height: 50px; mix-blend-mode: multiply;">
+                    </a>
+                    <a href="https://www.instagram.com/">
+                        <img src="../Assets/insta.jpg" style="width: 50px; height: 50px; mix-blend-mode: multiply;">
+                    </a>
+                    <a href="https://twitter.com/?lang=en">
+                        <img src="../Assets/twitter.png" style="width: 50px; height: 50px; mix-blend-mode: multiply;">
+                    </a>
+                </ul>
+            </div>
+            <div class="col6">
+                <a href="https://play.google.com/store/games?hl=en&pli=1" target="_blank">
+                    <img src="../Assets/app.png" width="230px" height="170px" style="mix-blend-mode: multiply;">
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="../Assets/logo.png" style="mix-blend-mode: multiply;">
+  <meta charset="UTF-8">
+  <title>Cafe</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+  <script src="/JS Files/main.js"></script>
+  <style>
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 1fr; /* Divide the container into two equal columns */
+      gap: 20px; /* Add spacing between columns */
+    }
+    
+    .column {
+      border: 1px solid #ccc;
+      padding: 20px;
+    }
+
+    footer {
+      display: flex; /* Maintain flexbox for footer layout */
+      justify-content: space-between; /* Align footer content horizontally */
+      width: 100%; /* Set footer width to 100% */
+    }
+    * {
+    margin: 0;
+    padding: 0;
+}
+
+li, a, button {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #402E02;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap; /* Allow items to wrap */
+}
+
+.logo {
+    cursor: pointer;
+    width: 150px;
+    height: 140px;
+    padding: 15px;
+}
+
+nav {
+    font-size: larger;
+}
+
+.nav_links {
+    list-style: none;
+}
+
+.nav_links li {
+    display: inline-block;
+    padding: 0 10px;
+    font-size: larger;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+button {
+    padding: 19px 30px;
+    background-color: #D6BEA2;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 10px;
+}
+
+.nav_extras {
+    margin-left: auto; /* Align to the right */
+}
+
+button:hover {
+    background-color: #C5A28A; /* Different hover color */
+}
+
+form.example input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    width: 600px; /* Make it responsive */
+    max-width: 2000px; /* Set max-width */
+    background: #f1f1f1;
+    border-radius: 50px;
+    margin: 5px 5px 5px 20px;
+}
+
+.banner {
+    width: 100%; /* Make it full width */
+    position: relative;
+    overflow: hidden;
+}
+
+.slideshow {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    animation: slide 25s infinite;
+}
+
+.slideshow img {
+    width: 100%;
+    height: auto; /* Keep aspect ratio */
+    object-fit: cover;
+}
+
+@keyframes slide {
+    0%, 100% { transform: translateX(0); }
+    20% { transform: translateX(-100%); }
+    40% { transform: translateX(-200%); }
+    60% { transform: translateX(-300%); }
+    80% { transform: translateX(-400%); }
+}
+
+.lobster-regular {
+    font-family: "Lobster", sans-serif;
+}
+
+.title {
+    text-align: left;
+    padding-left: 10%;
+    font-family: "Lobster", sans-serif;
+}
+
+footer {
+    background-color: #D6BEA2;
+    color: #402E02;
+    padding: 100px 0 30px;
+    border-top-left-radius: 125px;
+    font-size: large;
+    line-height: 20px;
+}
+
+.row {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.col {
+    flex-basis: 25%;
+    padding: 10px;
+}
+
+.Testimonials {
+    padding: 40px;
+    background: #f1f1f1;
+    color: #434343;
+    text-align: center;
+}
+
+.inner {
+    max-width: 2200px;
+    margin: auto;
+    padding: 10px 20px;
+}
+
+.border {
+    width: 177px;
+    height: 3px;
+    background: black;
+    margin: 26px auto;
+}
+
+.Testimonial {
+    background: #fff;
+    padding: 30px;
+}
+
+.Testimonial img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.name {
+    font-size: 20px;
+    text-transform: uppercase;
+    margin: 20px 0;
+}
+
+.stars img {
+    width: 30px;
+    height: 30px;
+}
+
+.heading {
+    text-align: left;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: larger;
+    color: #434343;
+    padding-left: 60px;
+}
+
+.subheading {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.border1 {
+    width: 220px;
+    height: 3px;
+    background: black;
+    margin-left: 60px;
+    margin-bottom: 30px;
+}
+
+.menu-container {
+    padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 50%;
+}
+
+.box img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin: 50px;
+}
+
+.box {
+    text-align: center;
+    padding-left: 10px;
+}
+
+img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+    .col {
+        flex-basis: 45%; /* Adjust column width for medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start; /* Align items to the start */
+    }
+
+    nav {
+        width: 100%; /* Full width for nav */
+    }
+
+    .nav_links li {
+        display: block; /* Stack links vertically */
+        padding: 10px 0; /* Add spacing */
+    }
+
+    .nav_extras {
+        margin: 10px 0; /* Adjust margins */
+    }
+
+    form.example input[type=text] {
+        width: 100%; /* Full width */
+        margin: 5px 0; /* Adjust margins */
+    }
+
+    .row {
+        flex-direction: column; /* Stack rows vertically */
+        align-items: center; /* Center items */
+    }
+
+    .col {
+        flex-basis: 100%; /* Full width for small screens */
+        padding: 20px 0; /* Add padding */
+    }
+
+    .menu-container {
+        padding: 20px; /* Adjust padding */
+    }
+
+    .box img {
+        width: 80px; /* Adjust image size */
+        height: 80px; /* Adjust image size */
+    }
+}
+
+@media (max-width: 480px) {
+    button {
+        padding: 10px 20px; /* Adjust button size */
+        font-size: 14px; /* Smaller font size */
+    }
+
+    .title {
+        padding-left: 5%; /* Less padding on small screens */
+    }
+
+    .heading, .subheading {
+        padding-left: 0; /* Remove padding */
+        text-align: center; /* Center text */
+    }
+
+    .border1 {
+        margin-left: 0; /* Center border */
+    }
+
+    .nav_extras {
+        margin-top: 10px; /* Add margin */
+    }
+}
+ 
+  /* Styling for the contact button */
+  .contact-button {
+    position: fixed;
+    bottom: 20px;  /* Position 20px above the bottom of the viewport */
+    right: 20px;   /* Position 20px from the right side of the viewport */
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    width: 100px;
+    height: 100px;
+  }
+  
+  .contact-button img:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Content styling */
+  .content {
+    padding: 20px;
+  }
+
+  .full-cup{
+    background-image: url(full.jpg);
+    background-size: cover;
+    background-repeat: none;
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    margin-left: 1150px;
+
+}
+
+.half-cup{
+    background-image: url(half.png);
+    background-size: cover;
+    background-repeat: none;
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    margin-left: 1150px;
+
+}
+
+.empty-cup{
+    background-image: url(emp.png);
+    background-size: cover;
+    background-repeat: none;
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    margin-left: 1150px;
+
+}
+
+.empty{
+    display: none;
+}
+
+
+.non-empty{
+    display: block;
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <img class="logo" src="../Assets/logo.png" style="flex-wrap: wrap; mix-blend-mode: multiply;" alt="logo">
+    <nav>
+      <ul class="nav_links" style="font-size: large;">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="Commitment.html">About</a></li>
+        <li><a href="Online_Order.html">Order</a></li>
+        <li><a href="Uni_Gifts.html">Gift</a></li>
+        <li><a href="Offers.html">Offers</a></li>
+      </ul>
+    </nav>
+    <form class="example" action="action_page.php" style="margin-left: 370px;">
+      <input type="text" placeholder="Search.." name="search">
+    </form>
+  </header>
+  <hr>
+  <div>
+    <p style="font-size: 25px; font-family: 'Lobster';text-align: center;color: #402E02; background-color:#D6BEA2 ;">"A place to grab more than a Coffee."</p>
+  </div>
+  <hr>
+  <!-- Slideshow Banner Starts -->
+  <div class="banner">
+    <div class="slideshow">
+        <img src="../Assets/image1.jpg" alt="Image 1">
+        <img src="../Assets/image2.png" alt="Image 2">
+        <img src="../Assets/image3.png" alt="Image 3">
+        <img src="../Assets/image4.jpg" alt="Image 4">
+        <img src="../Assets/image5.png" alt="Image 5">
+    </div>
+</div>
+  <div class="container">
+    <div class="column">
+      <h3>To-Do List</h3>
+      <ul id="todo-list"></ul>
+      <input type="text" id="new-todo" placeholder="Add a new task">
+      <button onclick="addTodo()">Add Task</button>
+    </div>
+    <div class="column">
+      <h3>Calendar</h3>
+      <iframe src="https://calendar.google.com/calendar/embed?src=your_calendar_id@gmail.com&ctz=UTC" style="border: 0" width="800" height="600" allowfullscreen="true">
+      </iframe>
+    </div>
+  </div>
+  <div class="contact-button">
+    <a href="18.html">
+      <img src="../Assets/support.png" style="border-radius: 100%;">
+    </a>
+  </div>
+  
+  <!-- Footer Starts -->
+  <footer style="display: flex;">
+    <div class="row">
+        <div class="col1">
+            <img src="../Assets/logo.png" style=" width: 190px; height: 180px;
+            padding-left: 30px; padding-top: 30px; display: flex; margin-right: 0%;mix-blend-mode: multiply;">
+        </div>
+        <br>
+        <div class="col2">
+            <ul style="padding-left: 30px;">
+                ABOUT US
+                <br>
+                <br>
+                <li><a href="Commitment.html" target="_blank">Our Company</a></li>
+                <li><a href="Meet_Team.html" target="_blank">Our Team</a></li>
+                <li><a href="../index.html" target="_blank">Home</a></li>
+            </ul>
+        </div>
+        <div class="col3">
+            <ul style="padding-left: 30px;">
+                RESPONSIBILITY
+                <br>
+                <br>
+                <li><a href="Commitment.html" target="_blank">Diversity</a></li>
+                <li>Community</li>
+                <li>Ethical Sourcing</li>
+                <li>Environmental Ownership</li>
+                <li>Learn more</li>
+            </ul>
+        </div>
+        <div class="col4">
+            <ul style="padding-left: 30px;">
+                QUICK LINKS
+                <br>
+                <br>
+                <li>Privacy Policy</li>
+                <li>Faqs</li>
+                <li>Customer Service</li>
+                <li>Delivery</li>
+                <li>Ownership</li>
+                <li>Subscription</li>
+            </ul>
+        </div>
+        <div class="col5">
+            <ul style="padding-left: 30px;">
+                SOCIAL MEDIA
+                <br>
+                <br>
+                <a href="https://www.facebook.com/">
+                    <img src="facebook.png" style="width: 53px; height: 50px; mix-blend-mode: multiply;">
+                </a>
+                <a href="https://www.instagram.com/">
+                    <img src="../Assets/insta.jpg" style="width: 53px; height: 50px; mix-blend-mode: multiply;">
+                </a>
+                <a href="https://twitter.com/?lang=en">
+                    <img src="../Assets/twitter.png" style="width: 53px; height: 50px; mix-blend-mode: multiply;">
+                </a>
+            </ul>
+        </div>
+        <div class="col6">
+            <a href="https://play.google.com/store/games?hl=en&pli=1" target="_blank">
+                <img src="../Assets/app.png" width="230px" height="180px" style="mix-blend-mode: multiply;">
+            </a>
+        </div>
+    </div>
+</footer>
+    
+</body>
+</html>

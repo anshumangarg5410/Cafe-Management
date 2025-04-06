@@ -5,6 +5,8 @@
 
 }
 
+/* navbvar */
+
 li, a, button {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 500;
@@ -73,6 +75,53 @@ form.example input[type=text] {
     border-radius: 50px;
     margin: 5px 5px 5px 20px;
 }
+
+
+
+.full-cup{
+    background-image: url(../Assets/full.jpg);
+    background-size: cover;
+    background-repeat: none;
+    height: 95px;
+    width: 95px;
+    position: absolute;
+    margin-left: 1100px;
+}
+
+.half-cup{
+    background-image: url(../Assets/half.png);
+    background-size: cover;
+    background-repeat: none;
+    height: 95px;
+    width: 95px;
+    position: absolute;
+    margin-left: 1100px;
+
+}
+
+.empty-cup{
+    background-image: url(../Assets/emp.png);
+    background-size: cover;
+    background-repeat: none;
+    height: 95px;
+    width: 95px;
+    position: absolute;
+    margin-left: 1100px;
+
+}
+
+.empty{
+    display: none;
+}
+
+
+.non-empty{
+    display: block;
+}
+
+
+
+/* navbvar ENDS */
 
 .banner {
     width: 100%; /* Make it full width */
@@ -345,45 +394,3 @@ img {
   .content {
     padding: 20px;
   }
-
-  .full-cup{
-    background-image: url(../Assets/full.jpg);
-    background-size: cover;
-    background-repeat: none;
-    height: 95px;
-    width: 95px;
-    position: absolute;
-    margin-left: 1100px;
-}
-
-.half-cup{
-    background-image: url(../Assets/half.png);
-    background-size: cover;
-    background-repeat: none;
-    height: 95px;
-    width: 95px;
-    position: absolute;
-    margin-left: 1100px;
-
-}
-
-.empty-cup{
-    background-image: url(../Assets/emp.png);
-    background-size: cover;
-    background-repeat: none;
-    height: 95px;
-    width: 95px;
-    position: absolute;
-    margin-left: 1100px;
-
-}
-
-.empty{
-    display: none;
-}
-
-
-.non-empty{
-    display: block;
-}
-

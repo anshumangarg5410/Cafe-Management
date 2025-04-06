@@ -12,7 +12,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:wght@300;400;600&family=Pacifico&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:wght@300;400;600&family=Pacifico&display=swap"
+        rel="stylesheet">
 
     <style>
         /* General Body Styles */
@@ -48,7 +50,8 @@
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
             background-color: #ffffff;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
-            width: 100%;  /* Changed for product card width */
+            width: 100%;
+            /* Changed for product card width */
             height: 100%;
             position: relative;
         }
@@ -60,7 +63,7 @@
 
         .product-card img {
             width: 100%;
-            height: 220px; 
+            height: 220px;
             object-fit: cover;
             overflow: hidden;
             transition: transform 0.3s ease;
@@ -130,45 +133,63 @@
         /* Media Queries for Footer */
         @media (max-width: 768px) {
             footer .row {
-                display: block;  /* Changed to block to stack on smaller screens */
+                display: block;
+                /* Changed to block to stack on smaller screens */
                 padding-left: 0;
             }
 
-            footer .col1, footer .col2, footer .col3, footer .col4, footer .col5, footer .col6 {
-                width: 100%;  /* Changed to 100% width for stacking */
+            footer .col1,
+            footer .col2,
+            footer .col3,
+            footer .col4,
+            footer .col5,
+            footer .col6 {
+                width: 100%;
+                /* Changed to 100% width for stacking */
                 padding: 0;
                 margin-bottom: 20px;
             }
-            
+
         }
 
         /* Footer Flex Layout */
         footer .row {
-            display: flex; /* Changed from block to flex to align columns inline */
-            flex-wrap: wrap;  /* Ensures columns wrap when necessary */
+            display: flex;
+            /* Changed from block to flex to align columns inline */
+            flex-wrap: wrap;
+            /* Ensures columns wrap when necessary */
             justify-content: space-between;
             padding: 0 15px;
         }
 
-        footer .col1, footer .col2, footer .col3, footer .col4, footer .col5, footer .col6 {
-            flex-basis: 16%;  /* Changed to 16% for even distribution of columns */
+        footer .col1,
+        footer .col2,
+        footer .col3,
+        footer .col4,
+        footer .col5,
+        footer .col6 {
+            flex-basis: 16%;
+            /* Changed to 16% for even distribution of columns */
             padding-left: 30px;
         }
 
         /* Media Queries for Product Card Layout */
         @media (max-width: 768px) {
             .product-card {
-                width: 100%;  /* Changed to 100% width for product cards on mobile */
+                width: 100%;
+                /* Changed to 100% width for product cards on mobile */
             }
 
             .row {
                 display: flex;
                 flex-wrap: wrap;
-                justify-content: center;  /* Center product cards on smaller screens */
+                justify-content: center;
+                /* Center product cards on smaller screens */
             }
 
             .col-md-3 {
-                flex-basis: 100%;  /* Changed to 100% width on smaller screens */
+                flex-basis: 100%;
+                /* Changed to 100% width on smaller screens */
                 margin: 10px 0;
             }
 
@@ -180,15 +201,181 @@
                 font-size: 1.1rem;
             }
         }
-        a {
-    color: inherit;  /* Inherits color from parent element */
-    text-decoration: none;  /* Removes the underline */
-}
 
+        a {
+            color: inherit;
+            /* Inherits color from parent element */
+            text-decoration: none;
+            /* Removes the underline */
+        }
+
+
+
+
+        /* navbar */
+
+        li,
+        a,
+        button {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 500;
+            font-size: 16px;
+            color: #402E02;
+            text-decoration: none;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            background-color: white;
+            flex-wrap: wrap;
+            /* Allow items to wrap */
+        }
+
+        .logo {
+            cursor: pointer;
+            width: 150px;
+            height: 110px;
+            padding: 15px;
+            flex-wrap: wrap;
+            mix-blend-mode: multiply;
+        }
+
+        nav {
+            font-size: larger;
+        }
+
+        .nav_links {
+            list-style: none;
+            font-size: large;
+        }
+
+        .nav_links li {
+            display: inline-block;
+            padding: 0 10px;
+            font-size: larger;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        button {
+            padding: 19px 30px;
+            background-color: #D6BEA2;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin: 10px;
+        }
+
+        .nav_extras {
+            margin-left: auto;
+            /* Align to the right */
+        }
+
+        button:hover {
+            background-color: #C5A28A;
+            /* Different hover color */
+        }
+
+        form.example input[type=text] {
+            padding: 10px;
+            font-size: 17px;
+            border: 1px solid grey;
+            width: 600px;
+            /* Make it responsive */
+            max-width: 2000px;
+            /* Set max-width */
+            background: #f1f1f1;
+            border-radius: 50px;
+            margin: 5px 5px 5px 20px;
+        }
+
+
+
+        .full-cup {
+            background-image: url(../Assets/full.jpg);
+            background-size: cover;
+            background-repeat: none;
+            height: 95px;
+            width: 95px;
+            position: absolute;
+            margin-left: 1100px;
+        }
+
+        .half-cup {
+            background-image: url(../Assets/half.png);
+            background-size: cover;
+            background-repeat: none;
+            height: 95px;
+            width: 95px;
+            position: absolute;
+            margin-left: 1100px;
+
+        }
+
+        .empty-cup {
+            background-image: url(../Assets/emp.png);
+            background-size: cover;
+            background-repeat: none;
+            height: 95px;
+            width: 95px;
+            position: absolute;
+            margin-left: 1100px;
+
+        }
+
+        .empty {
+            display: none;
+        }
+
+
+        .non-empty {
+            display: block;
+        }
+
+
+        /* end of navbar */
     </style>
 </head>
 
 <body>
+
+    <header>
+        <!-- NAVIGATION BAR STARTS -->
+        <!-- LOGO -->
+        <img class="logo" src="../Assets/logo.png" alt="logo">
+        <!-- NAV LINKS -->
+        <nav>
+            <ul class="nav_links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../HTML Files/Wel_BrewHev.html">About</a></li>
+                <li><a href="../HTML Files/Online_Order.html">Order</a></li>
+                <li><a href="../HTML Files/Uni_Gifts.html">Gift</a></li>
+                <li><a href="../HTML Files/Offers.html">Offers</a></li>
+            </ul>
+        </nav>
+
+        <!-- SEARCH BUTTON IN THE NAVBAR -->
+        <form class="example" action="action_page.php">
+            <input type="text" placeholder="Search.." name="search">
+        </form>
+
+        <!-- CUP IN NAVBAR -->
+        <div class="full-cup empty"></div>
+        <div class="half-cup empty "></div>
+        <div class="empty-cup"></div>
+
+        <!-- SIGN IN AND SIGN UP FORMS -->
+        <div class="nav_extras">
+            <button><a href="../HTML Files/role_sel.html" target="_blank"> Sign in </a></button>
+            <button><a href="../HTML Files/Sign_In.html" target="_blank">Sign up</a></button>
+        </div>
+        <!-- NAVIGATION AND NAVBAR ENDS -->
+    </header>
+
+
+
+
 
     <!-- Hero Section -->
     <section class="hero">
@@ -252,7 +439,8 @@
                     <img src="../Assets/caramel.jpeg" alt="Choco lava cake">
                     <div class="p-3">
                         <h3>Choco Lava Cake</h3>
-                        <p>Satisfy your sweet cravings with our irresistibly rich Choco Lava Cake – where every bite oozes chocolate bliss!</p>
+                        <p>Satisfy your sweet cravings with our irresistibly rich Choco Lava Cake – where every bite
+                            oozes chocolate bliss!</p>
                         <div class="price">$12.99</div>
                         <button class="btn mt-3">Add to Cart</button>
                     </div>
@@ -382,6 +570,7 @@
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../JS Files/main.js"></script>
 </body>
 
 </html>

@@ -46,12 +46,20 @@ cart.forEach((item) => {
 })
 
 let totaldiv = document.createElement("div");
+let reset = document.createElement("div");
+
 
 totaldiv.classList.add("cart-total");
+reset.classList.add("cart-rem");
 
 totaldiv.innerHTML = `
     <h2>Total : ${total}</h2>
     <button class="checkout-btn">Proceed to Checkout</button>
 `
 
+reset.innerHTML = `
+    <button onclick = "localStorage.removeItem('cart'); ; location.reload();" class="checkout-btn">Reset the Cart</button>
+`
+
 cartcontainuer.appendChild(totaldiv);
+cartcontainuer.appendChild(reset);

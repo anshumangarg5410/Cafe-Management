@@ -1,4 +1,4 @@
-// Step 1: Load existing cart from localStorage if it exists
+
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
 function addToCart(name, price) {
@@ -8,7 +8,6 @@ function addToCart(name, price) {
         quantity: 1
     };
 
-    // Step 2: Check if item already exists in cart
     let existing = cart.find((food) => food.name === name);
 
     if (existing) {
@@ -17,6 +16,42 @@ function addToCart(name, price) {
         cart.push(item);
     }
 
-    // Step 3: Save updated cart to localStorage
     localStorage.setItem("cart", JSON.stringify(cart));
 }
+
+
+let cartcontainuer = document.querySelector(".cart-container");
+
+let total = 0;
+
+cartcontainuer.innerHTML = "";
+
+cart.forEach((item) => {
+    let tempprice = item.price * item.quantity;
+    total += tempprice;
+
+    let cartitem = document.createElement("div");
+    cartitem.classList.add("cart-item");
+
+    cartitem.innerHTML = `
+        <img src="../Assets/bestseller.jpg" alt="${item.name}">
+        <div class="item-details">
+            <h3>"${item.name}"</h3>
+            <p>Price: ${item.price}</p>
+            <input type="number" min="1" value="${item.quantity}">
+        </div>
+    `
+
+    cartcontainuer.appendChild(cartitem);
+})
+
+let totaldiv = document.createElement("div");
+
+totaldiv.classList.add("cart-total");
+
+totaldiv.innerHTML = `
+    <h2>Total : ${total}</h2>
+    <button class="checkout-btn">Proceed to Checkout</button>
+`
+
+cartcontainuer.appendChild(totaldiv);

@@ -79,7 +79,7 @@ form.example input[type=text] {
 
 
 .full-cup{
-    background-image: url(../Assets/full.jpg);
+    background-image: url(../Assets/full.png);
     background-size: cover;
     background-repeat: none;
     height: 95px;
@@ -87,6 +87,7 @@ form.example input[type=text] {
     position: absolute;
     margin-left: 1000px;
     margin-top: -10px;
+
 }
 
 .half-cup{
@@ -98,6 +99,7 @@ form.example input[type=text] {
     position: absolute;
     margin-left: 1000px;
     margin-top: -10px;
+
 
 }
 
@@ -261,7 +263,7 @@ footer {
 
 .heading {
     text-align: left;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Times New Roman', Times, serif !important;
     font-size: larger;
     color: #434343;
     padding-left: 60px;

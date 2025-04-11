@@ -571,7 +571,7 @@ footer {
 
 .address-container {
   font-family: Arial, sans-serif;
-  max-width: 600px;
+  width: 600px;
   padding: 15px;
   border: 1px solid #e0e0e0;
   border-radius: 8px;
@@ -582,22 +582,54 @@ footer {
   align-items: flex-start;
 }
 
-.addnewadd{
-    width: 100%;
-    background-color: red;
+.form-input{
+  margin-top: 10px;
 }
 
+.header{
+  background-color: transparent;
+  height: 30px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
 
+.addnewadd{
+    width: 580px;
+    background-color: transparent;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    margin-top: 20px;
+}
+
+.ifclickedadd{
+  width: 100%;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ad-buttonn{
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+}
 
 .addd-button{
-    background-color: red !important;
-    height: 30px !important;
-    width: 50px !important;
+    background-color: lightgoldenrodyellow !important;
+    height: 100%;
+    width: 10%;
     display: flex;
-    font-size: 10px;
+    font-size: 12px;
     justify-content: center;
     align-items: center;
-    border-radius: 10px;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 .checkbox-wrapper {
@@ -780,14 +812,18 @@ footer {
   
   .form-row {
     display: flex;
-    gap: 16px;
+    background-color: transparent;
+    align-items: center;
+    justify-content: space-between;
     margin-bottom: 16px;
+    /* padding: 5px; */
   }
   
   .half {
     flex: 1;
   }
-  
+
+
   .form-input {
     width: 100%;
     padding: 12px;
@@ -795,6 +831,14 @@ footer {
     border: 1px solid #d5d9d9;
     border-radius: 4px;
     box-sizing: border-box;
+  }
+
+  .name{
+    width: 60% !important;
+  }
+
+  .phone{
+    width: 38% !important;
   }
   
   .form-input::placeholder {

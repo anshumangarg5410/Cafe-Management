@@ -120,12 +120,13 @@ console.log("working");
 
 //address add remove
 let addressarray = [
+
   {
     id: 1,
-    name: "Anshuman Garg",
+    name: "Ria Gupta",
     adddress:
-      "5410, CAT 1, G/F, MHC, MMJ, CHD, CHANDIGARH, CHANDIGARH, 160101, India",
-    phone: 7814941384,
+      "Sky Mansion at Bugatti Residences in Business Bay, Dubai",
+    phone: 7814731025,
   },
 ];
 
@@ -192,6 +193,7 @@ function onadding(){
   })
 
   addressch();
+  document.querySelector(".ifclickedtonewadd").classList.add("display_none");
 
 }
 
@@ -214,3 +216,8 @@ function renderingthecartlist(){
 }
 
 renderingthecartlist()
+
+
+//addbutton for adding new address
+
+

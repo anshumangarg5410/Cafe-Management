@@ -117,30 +117,30 @@
                             </div>
                         </div>
 
-                        <div class="add">
+                        <div class="add" onclick="document.querySelector('.ifclickedtonewadd').classList.remove('display_none')">
                             <p1>Add</p1>
                         </div>
 
                     </div>
-                    <div class="ifclickedadd">
-                        <div class="addnewadd">
+                    <div class="ifclickedadd ifclickedtonewadd display_none">
+                        <div class="addnewadd ">
                             <p class="header">Add New Address</p>
         
                             <div class="form-groupp address">
                                 <input type="text" id="address" placeholder="Address" class="form-input">
                             </div>
         
-                            <div class="formm-row">
-                                <div class="form-group name">
-                                    <input type="text" id="name" placeholder="Name" class="form-input">
+                            <div class="form-row">
+                                <div class="name">
+                                    <input type="text" id="name" placeholder="Name" class="form-input namee">
                                 </div>
-                                <div class="form-groupp phone">
-                                    <input type="number" id="phone" placeholder="Phone No." class="form-input">
+                                <div class="phone">
+                                    <input type="number" id="phone" placeholder="Phone No." class="form-input phonee">
                                 </div>
                             </div>
         
-                            <div class="add-buttonn" onclick="onadding()">
-                                <button class="addd-button">Addmnn</button>
+                            <div class="ad-buttonn" onclick="onadding()">
+                                <div class="addd-button">Save </div>
                             </div>
                         </div>
                     </div>

@@ -29,6 +29,7 @@ cartcontainuer.innerHTML = "";
 cart.forEach((item) => {
     let tempprice = item.price * item.quantity;
     total += tempprice;
+    
 
     let cartitem = document.createElement("div");
     cartitem.classList.add("cart-item");

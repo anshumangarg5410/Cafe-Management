@@ -54,7 +54,7 @@ reset.classList.add("cart-rem");
 
 totaldiv.innerHTML = `
     <h2>Total : ${total}</h2>
-    <button class="checkout-btn">Proceed to Checkout</button>
+    <button class="checkout-btn" onclick="window.location.href='../HTML Files/payments.html'">Proceed to Checkout</button>
 `
 
 reset.innerHTML = `

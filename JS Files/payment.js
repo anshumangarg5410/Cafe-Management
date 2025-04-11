@@ -176,3 +176,22 @@ function onadding(){
 
 }
 
+//side wali cart list 
+
+
+let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+let cartlist = document.querySelector(".price")
+
+function renderingthecartlist(){
+  cartlist.innerHTML = `
+    <div class="titlee">
+    <p1>Cart</p1>
+    </div>
+  `;
+
+  cart.forEach()
+
+}
+
+renderingthecartlist()

@@ -63,3 +63,5 @@ reset.innerHTML = `
 
 cartcontainuer.appendChild(totaldiv);
 cartcontainuer.appendChild(reset);
+
+

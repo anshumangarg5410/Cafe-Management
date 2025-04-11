@@ -200,24 +200,85 @@ function onadding(){
 //side wali cart list 
 
 
+// let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+// let cartlist = document.querySelector(".price")
+// let total = 0;
+// function renderingthecartlist(){
+//   total = 0;
+//   cartlist.innerHTML = `
+//     <div class="titlee">
+//     <p1>Cart</p1>
+//     </div>
+//   `;
+//   cart.forEach((add, index) =>{
+//     let cartsing = document.createElement("div");
+//     cartsing.innerHTML = `
+//       <div class="items item1">
+//         <div class="item">
+//           <p>${add.name}</p>
+//         </div>
+//         <div class="itemprice">
+//           <p>$ ${(add.price * add.quantity).toFixed(2)}</p>
+//         </div>
+//       </div>
+//     `
+//     total += add.price * add.quantity;
+//     cartlist.appendChild(cartsing);
+//   })
+
+//   let totaldiv = document.createElement("div");
+//   totaldiv.classList.add("total");
+//   totaldiv.innerHTML =  `
+//       <div class="headddd">
+//         <p>Total</p>
+//       </div>
+//       <div class="sumpri">
+//         <p1>$ ${total.toFixed(2)}</p1>
+//         </div>
+//   `
+//   cartlist.appendChild(totaldiv);
+// }
+
+
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
 let cartlist = document.querySelector(".price")
-
+let total = 0;
 function renderingthecartlist(){
+  total = 0;
   cartlist.innerHTML = `
     <div class="titlee">
-    <p1>Cart</p1>
+      <p1>Cart</p1>
     </div>
   `;
+  
+  cart.forEach((add, index) => {
+    let cartsing = document.createElement("div");
+    cartsing.classList.add("items", "item1"); // Add both classes directly
+    cartsing.innerHTML = `
+      <div class="item">
+        <p>${add.name}</p>
+      </div>
+      <div class="itemprice">
+        <p>$ ${(add.price * add.quantity).toFixed(2)}</p>
+      </div>
+    `;
+    total += add.price * add.quantity;
+    cartlist.appendChild(cartsing);
+  })
 
-  cart.forEach()
-
+  let totaldiv = document.createElement("div");
+  totaldiv.classList.add("total");
+  totaldiv.innerHTML = `
+    <div class="headddd">
+      <p1>Total</p1>
+    </div>
+    <div class="sumpri">
+      <p1>$ ${total.toFixed(2)}</p1>
+    </div>
+  `;
+  cartlist.appendChild(totaldiv);
 }
 
-renderingthecartlist()
-
-
-//addbutton for adding new address
-
-
+renderingthecartlist();

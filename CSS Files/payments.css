@@ -514,12 +514,13 @@ footer {
   font-size: 20px;
   height: 50px;
   display: flex;
+  border-bottom: 1px solid black;
   justify-items: start;
   align-items: center;
 }
 
 .head p444 {
-  margin-left: 20px;
+  margin-left: 2px;
 }
 
 /* address*/
@@ -866,15 +867,10 @@ footer {
     margin-top: 8px;
   }
 
-
-
-
-
-
-
 /* cart side container  */
 
 .cartprice {
+  margin-right: 10px;
   height: 100%;
   width: 30%;
   background-color: transparent;
@@ -887,17 +883,21 @@ footer {
   height: auto;
   width: 100%;
   background-color: transparent;
+  border: 1px solid #d5d9d9;
   justify-content: start;
   display: flex;
+  /* border-radius: 8px; */
   margin-top: 40px;
   justify-content: center;
 }
 
 .cartprice .mainnn .price {
   height: 70%;
-  width: 90%;
-  background-color: #ededed;
-  border-radius: 15px;
+  width: 100%;
+  /* background-color: #ededed; */
+  background-color: transparent;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -906,7 +906,8 @@ footer {
 .titlee {
   background-color: grey;
   height: 35px;
-  border-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -917,12 +918,34 @@ footer {
 
 .items {
   background-color: transparent;
-  height: 30px;
+  height: 100%;
   width: 80%;
   display: flex;
-  justify-content: space-between;
+  justify-content: start;
   align-items: center;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  border-bottom: 1px solid #d5d9d9;
 }
+
+.item{
+  background-color: transparent;
+  word-break: break-word;
+  width: 50%;
+  height: 100%;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+
+
+.itemprice{
+  background-color: transparent;
+  width: 50%;
+  word-break: break-word;
+  height: 100%;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+
 
 .item1 {
   margin-top: 20px;
@@ -936,4 +959,5 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }

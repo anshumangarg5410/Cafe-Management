@@ -121,7 +121,7 @@ console.log("working");
 //address add remove
 let addressarray = [
   {
-    id: "1",
+    id: 1,
     name: "Anshuman Garg",
     adddress:
       "5410, CAT 1, G/F, MHC, MMJ, CHD, CHANDIGARH, CHANDIGARH, 160101, India",
@@ -145,7 +145,7 @@ function addressch() {
       <p>${addr.adddress}</p>
       <p>Phone number: ${addr.phone}</p>
       <div class="address-actions">
-      <a href="#" class="edit-link">Remove Address</a>
+      <a href="#" class="edit-link" onclick="removeaddress(${addr.id})">Remove Address</a>
       </div>
       </div>
     `;
@@ -156,11 +156,28 @@ function addressch() {
 addressch();
 
 
+//remove address
+
+function idsubs(start){
+  for(let i = start; i<addressarray.length; i++){
+    addressarray[i].id--;
+  }
+}
+
+function removeaddress(target){
+  addressarray.splice(target-1, 1);
+  count--;
+  addressch();
+  idsubs(target-1);
+  console.log(addressarray);
+}
+
 
 
 //address input 
-
+let count = 1;
 function onadding(){
+  count++;
   let address = document.querySelector("#address").value
   let name = document.querySelector("#name").value
   let phone = document.querySelector("#phone").value
@@ -168,10 +185,12 @@ function onadding(){
   console.log(name);
   console.log(phone);
   addressarray.push({
+    id: count,
     name: name,
     address: address,
     phone: phone,
   })
+
   addressch();
 
 }

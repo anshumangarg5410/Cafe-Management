@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafe Dashboard</title>
+    <!-- LINKING CSS FILES -->
+    <link rel="stylesheet" href="order.css">
+    <!-- LINKING BOXICONS -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+  <video autoplay muted loop id="bg-video">
+    <source src="(384) Coffee Cup Steam (Smoke) Simulation - In Blender - YouTube.mp4" type="video/mp4">
+  </video>
+    <nav class="sidebar close">
+        <header>
+            <div class="image-text">
+                <span>
+                    <img src="logo.png" alt="logo" style="mix-blend-mode: multiply;">
+                </span>
+                <div class="text header-text">
+                    <span class="name">Brew Heaven</span>
+                </div>
+            </div>
+            <i class='bx bx-chevron-right toggle'></i>
+        </header>
+        <div class="menu-bar">
+            <div class="menu">
+                <li class="search-box">
+                    <i class='bx bx-search icon' ></i>
+                    <input class="search" type="search" placeholder="Search...">
+                </li>
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="main_dashboard.html">
+                            <i class='bx bxs-dashboard icon'></i>
+                            <span class="text nav-text">Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="order_management.html">
+                            <i class='bx bx-cart icon'></i>
+                            <span class="text nav-text">Orders Management</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="menu_management.html">
+                            <i class='bx bx-restaurant icon'></i>
+                            <span class="text nav-text">Menu Management</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="staff_management.html">
+                            <i class='bx bx-group icon'></i>
+                            <span class="text nav-text">Staff Management</span>
+                        </a>
+                    </li>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <li class="mode">
+                        <div class="moon-sun">
+                            <i class='bx bx-moon icon moon'></i>
+                            <!-- <i class='bx bx-sun icon sun'></i> -->
+                        </div>
+                        <span class="mode-text text">Dark Mode</span>
+                        <div class="toggle-switch">
+                            <span class="switch"></span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="navbar">
+        <div class="greeting">
+          <h1>Welcome back, Emma!</h1>
+          <span>Tuesday, April 15, 2025</span>
+        </div>
+        <div class="actions">
+          <div class="search-container">
+            <input type="checkbox" id="search-toggle" class="search-toggle" />
+            <label for="search-toggle" class="search-label"><i class='bx bx-search'></i></label>
+            <div class="search-bar">
+              <input type="text" placeholder="Search..." />
+            </div>
+          </div>
+          <button class="new-order-btn">+ New Order</button>
+          <div class="notification"><i class='bx bx-bell' ></i>
+            <span class="badge">3</span>
+          </div>
+          <div class="avatar">
+            <img src="Assets/account.jpeg" alt="Avatar" />
+          </div>
+        </div>
+      </div>
+      
+      
+    
+        <!-- Orders List Section -->
+<div class="card-2" style="margin-left: 120px; margin-top: 35px; height: 450px;">
+    <div class="section-header">
+      <h2>Menu Management</h2>
+      <span>View All ›</span>
+    </div>
+  
+    <div class="order-table-container">
+      <table class="order-table">
+        <thead>
+          <tr>
+            <th>Product Code</th>
+            <th>Product Name</th>
+            <th>Product Category</th>
+            <th>Price</th>
+            <th>Vendor</th>
+            <th>Status</th>
+            <th>Orders Handled</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>#1024</td>
+            <td>French Toast</td>
+            <td>Breakfast</td>
+            <td>$25</td>
+            <td>New York</td>
+            <td>Active</td>
+            <td><span class="status complete">Active</span></td>
+            <td><button class="view-btn">View</button></td>
+          </tr>
+          <tr>
+            <td>#1025</td>
+            <td>Burrito</td>
+            <td>Breakfast</td>
+            <td>$20</td>
+            <td>Canada</td>
+            <td>Out of Stock</td>
+            <td><span class="status complete">Active</span></td>
+            <td><button class="view-btn">View</button></td>
+          </tr>
+          <tr>
+            <td>#1025</td>
+            <td>Bagels</td>
+            <td>Lunch</td>
+            <td>$30</td>
+            <td>Orlando</td>
+            <td>Active</td>
+            <td><span class="status pending">Low on Stock</span></td>
+            <td><button class="view-btn">View</button></td>
+          </tr>
+          <tr>
+            <td>#1025</td>
+            <td>Avacado Toast</td>
+            <td>Breakfast</td>
+            <td>$35</td>
+            <td>Dubai</td>
+            <td>Active</td>
+            <td><span class="status pending">Low on Stock</span></td>
+            <td><button class="view-btn">View</button></td>
+          </tr>
+          <tr>
+            <td>#1025</td>
+            <td>Americano</td>
+            <td>Drinks</td>
+            <td>$20</td>
+            <td>London</td>
+            <td>Out of Stock</td>
+            <td><span class="status Cancelled">Out of Stock</span></td>
+            <td><button class="view-btn">View</button></td>
+          </tr>
+          <tr>
+            <td>#1025</td>
+            <td>Pancakes</td>
+            <td>Breakfast</td>
+            <td>$25</td>
+            <td>America</td>
+            <td>Active</td>
+            <td><span class="status complete">Active</span></td>
+            <td><button class="view-btn">View</button></td>
+          </tr>
+          <tr>
+            <td>#1025</td>
+            <td>Cappacino</td>
+            <td>Drinks</td>
+            <td>$35</td>
+            <td>India</td>
+            <td>Break</td>
+            <td><span class="status complete">Active</span></td>
+            <td><button class="view-btn">View</button></td>
+          </tr>
+          <tr>
+            <td>#1025</td>
+            <td>Waffles</td>
+            <td>Breakfast</td>
+            <td>$18</td>
+            <td>Australia</td>
+            <td>Active</td>
+            <td><span class="status complete">Active</span></td>
+            <td><button class="view-btn">View</button></td>
+          </tr>
+          <tr>
+            <td>#1025</td>
+            <td>Omlet</td>
+            <td>Breakfast</td>
+            <td>$25</td>
+            <td>America</td>
+            <td>Active</td>
+            <td><span class="status complete">Active</span></td>
+            <td><button class="view-btn">View</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  
+        </div>
+    </div>
+        
+    <script src="main.js"></script>
+</body>
+</html>

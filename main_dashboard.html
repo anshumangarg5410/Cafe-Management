@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafe Dashboard</title>
+    <!-- LINKING CSS FILES -->
+    <link rel="stylesheet" href="style.css">
+    <!-- LINKING BOXICONS -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+  <video autoplay muted loop id="bg-video">
+    <source src="(384) Coffee Cup Steam (Smoke) Simulation - In Blender - YouTube.mp4" type="video/mp4">
+  </video>
+    <nav class="sidebar close">
+        <header>
+            <div class="image-text">
+                <span>
+                    <img src="logo.png" alt="logo" style="mix-blend-mode: multiply;">
+                </span>
+                <div class="text header-text">
+                    <span class="name">Brew Heaven</span>
+                </div>
+            </div>
+            <i class='bx bx-chevron-right toggle'></i>
+        </header>
+        <div class="menu-bar">
+            <div class="menu">
+                <li class="search-box">
+                    <i class='bx bx-search icon' ></i>
+                    <input class="search" type="search" placeholder="Search...">
+                </li>
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="main_dashboard.html">
+                            <i class='bx bxs-dashboard icon'></i>
+                            <span class="text nav-text">Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="order_management.html">
+                            <i class='bx bx-cart icon'></i>
+                            <span class="text nav-text">Orders Management</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="menu_management.html">
+                            <i class='bx bx-restaurant icon'></i>
+                            <span class="text nav-text">Menu Management</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="staff_management.html">
+                            <i class='bx bx-group icon'></i>
+                            <span class="text nav-text">Staff Management</span>
+                        </a>
+                    </li>
+                    
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <li class="mode">
+                        <div class="moon-sun">
+                            <i class='bx bx-moon icon moon'></i>
+                            <!-- <i class='bx bx-sun icon sun'></i> -->
+                        </div>
+                        <span class="mode-text text">Dark Mode</span>
+                        <div class="toggle-switch">
+                            <span class="switch"></span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="navbar">
+        <div class="greeting">
+          <h1>Welcome back, Emma!</h1>
+          <span>Tuesday, April 15, 2025</span>
+        </div>
+        <div class="actions">
+          <div class="search-container">
+            <input type="checkbox" id="search-toggle" class="search-toggle" />
+            <label for="search-toggle" class="search-label"><i class='bx bx-search'></i></label>
+            <div class="search-bar">
+              <input type="text" placeholder="Search..." />
+            </div>
+          </div>
+          <button class="new-order-btn">+ New Order</button>
+          <div class="notification"><i class='bx bx-bell' ></i>
+            <span class="badge">3</span>
+          </div>
+          <div class="avatar">
+            <img src="Assets/account.jpeg" alt="Avatar" />
+          </div>
+        </div>
+      </div>
+      <div class="stats">
+        <!-- Card 1 -->
+        <div class="card">
+          <div class="card-content">
+          <div class="card-header">
+            <p class="card-title">Today's Revenue</p>
+            <div class="card-icon green-icon">💲</div>
+          </div>
+            <p class="card-value">$1,842.50</p>
+            <p class="card-sub green">↑12.5% from yesterday</p>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card">
+          <div class="card-content">
+            <div class="card-header">
+              <p class="card-title">Total Orders</p>
+              <div class="card-icon blue-icon">🔒</div>
+            </div>
+            <p class="card-value">78</p>
+            <p class="card-sub green">↑8.3% from yesterday</p>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card">
+          <div class="card-content">
+            <div class="card-header">
+              <p class="card-title">Average Order Value</p>
+          <div class="card-icon yellow-icon">💳</div>
+            </div>
+            <p class="card-value">$23.62</p>
+            <p class="card-sub red">↓2.1% from yesterday</p>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="card">
+          <div class="card-content">
+            <div class="card-header">
+              <p class="card-title">Top Selling Item</p>
+              <div class="card-icon orange-icon">☕</div>
+            </div>
+            <p class="card-value bold">Cappuccino</p>
+            <p class="card-sub">42 orders today</p>
+          </div>
+        </div>
+        <div class="card" style="width: auto;">
+          <div class="card-content">
+            <div class="card-header">
+              <canvas id="myChart" width="900" height="280"></canvas>
+
+          </div>
+        </div>
+      </div>
+      
+      <div class="card-2" style="height: 350px;">
+        <div class="section-header">
+          <h2>Current Orders</h2>
+          <span>View All ›</span>
+        </div>
+          <div class="inventory-item pink">
+            <div class="inventory-info">
+              <strong>Order #931</strong><br/>
+              <small>2 x BlueBerry Scones</small>
+            </div>
+            <button class="reorder-btn">Pending</button>
+          </div>
+          <div class="inventory-item yellow">
+            <div class="inventory-info">
+              <strong>Order #634</strong><br/>
+              <small>1 x Americano</small>
+            </div>
+            <button class="reorder-btn">Completed</button>
+          </div>
+          <div class="inventory-item aqua">
+            <div class="inventory-info">
+              <strong>Order #619</strong><br/>
+              <small>1 x Bagel</small>
+            </div>
+            <button class="reorder-btn">Completed</button>
+        </div>
+      </div>
+       
+      <!-- <div class="dashboard"> -->
+        <!-- Inventory Alerts -->
+        <div class="card-2">
+          <div class="section-header">
+            <h2>Inventory Alerts</h2>
+            <span>Manage ›</span>
+          </div>
+            <div class="inventory-item pink">
+              <div class="inventory-info">
+                <strong>Coffee Beans - Arabica</strong><br/>
+                <small>Low stock: 2 kg left</small>
+              </div>
+              <button class="reorder-btn">Reorder</button>
+            </div>
+            <div class="inventory-item yellow">
+              <div class="inventory-info">
+                <strong>Fresh Milk</strong><br/>
+                <small>Expires in 2 days</small>
+              </div>
+              <button class="reorder-btn">Reorder</button>
+            </div>
+            <div class="inventory-item aqua">
+              <div class="inventory-info">
+                <strong>Chocolate Syrup</strong><br/>
+                <small>Low stock: 1 bottle left</small>
+              </div>
+              <button class="reorder-btn">Reorder</button>
+          </div>
+        </div>
+    
+        <!-- Staff on Duty -->
+        <div class="card-2">
+          <div class="section-header">
+            <h2>Staff on Duty</h2>
+            <span>Schedule ›</span>
+          </div>
+          <div class="staff-member">
+            <div class="staff-avatar"><img class="staff1" src="Assets/staff-3.jpg" alt="Staff"></div>
+            <div class="staff-info">
+              <strong>James Wilson</strong><br/>
+              <small>Barista · 8:00 AM – 4:00 PM</small>
+            </div>
+            <span class="status-dot active"></span>
+          </div>
+          <div class="staff-member">
+            <div class="staff-avatar"><img class="staff1" src="Assets/staff-2.jpeg" alt="Staff"></div>
+            <div class="staff-info">
+              <strong>Sophia Chen</strong><br/> 
+              <small>Cashier · 8:00 AM – 4:00 PM</small>
+            </div>
+            <span class="status-dot active"></span>
+          </div>
+          <div class="staff-member">
+            <div class="staff-avatar"><img class="staff1" src="Assets/staff-1.jpg" alt="Staff"></div>
+            <div class="staff-info">
+              <strong>Olivia Johnson</strong><br/>
+              <small>Barista · 12:00 PM – 8:00 PM</small>
+            </div>
+            <span class="status-dot break"></span>
+          </div>
+        </div>
+    
+        <!-- Popular Items -->
+        <div class="card-2">
+          <div class="section-header">
+            <h2>Popular Items</h2>
+            <span>View Menu ›</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-img"><img class="menu-img" src="Assets/capaccino2.jpeg" alt="Staff"></div>
+            <div class="menu-info">
+              <strong>Cappuccino</strong><br/>
+              <small>42 orders</small>
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 90%"></div>
+              </div>
+            </div>
+            <div class="price">$4.50</div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-img"><img class="menu-img" src="Assets/toast.jpeg" alt="Staff"></div>
+            <div class="menu-info">
+              <strong>Avocado Toast</strong><br/>
+              <small>38 orders</small>
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 80%"></div>
+              </div>
+            </div>
+            <div class="price">$8.95</div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-img"><img class="menu-img" src="Assets/pancakes.jpeg" alt="Staff"></div>
+            <div class="menu-info">
+              <strong>Pancakes</strong><br/>
+              <small>30 orders</small>
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 60%"></div>
+              </div>
+            </div>
+            <div class="price">$7.95</div>
+          </div>
+        </div>
+        <div class="card-2">
+          <div class="section-header">
+            <h2>Customer Feedback</h2>
+            <span>View All ›</span>
+          </div>
+          <div class="feedback">
+            <div class="feedback-item">
+              <div class="feedback-avatar"><img class="staff1" src="Assets/customer-2.jpeg" alt="Customer"></div>
+              <div class="feedback-info">             
+              <span class="feedback-rating">⭐⭐⭐⭐⭐</span><br>
+                <strong>Emma Brown</strong><br/>
+                <small>Great service and delicious coffee!</small>
+              </div>
+            </div>
+            <div class="feedback-item">
+              <div class="feedback-avatar"><img class="staff1" src="Assets/customer-3.jpeg" alt="Customer"></div>
+              <div class="feedback-info">          
+              <span class="feedback-rating">⭐⭐⭐⭐</span><br>
+                <strong>Michael Smith</strong><br/>
+                <small>Love the ambiance and the pastries!</small>
+              </div>
+            </div>
+            <div class="feedback-item">
+              <div class="feedback-avatar"><img class="staff1" src="Assets/customer-4.jpeg" alt="Customer"></div>
+              <div class="feedback-info">                
+                <span class="feedback-rating">⭐⭐⭐⭐⭐</span><br>
+                <strong>Olivia Johnson</strong><br/>
+                <small>Love the cozy vibes and fresh brews!</small>
+              </div>
+            </div>
+            <div class="feedback-item">
+              <div class="feedback-avatar"><img class="staff1" src="Assets/customer-5.jpeg" alt="Customer"></div>
+              <div class="feedback-info">
+                <span class="feedback-rating">⭐⭐⭐⭐</span><br>
+                <strong>Sophia Admas</strong><br/>
+                <small>Always my favorite morning stop.</small>
+              </div>
+            </div>
+            <div class="feedback-item">
+              <div class="feedback-avatar"><img class="staff1" src="Assets/customer-6.jpeg" alt="Customer"></div>
+              <div class="feedback-info">
+                <span class="feedback-rating">⭐⭐⭐⭐⭐</span><br>
+                <strong>Grace Kim</strong><br/>
+                <small>Perfect place to relax and recharge.</small>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <br>
+      <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+      <script>
+        const ctx = document.getElementById('myChart').getContext('2d');
+        const myChart = new Chart(ctx, {
+          type: 'line', 
+          data: {
+            labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun', 'Mon', 'Tue', 'Wed', 'Thu'],
+            datasets: [{
+              label: 'Daily Revenue ($)',
+              data: [150, 200, 180, 220, 170, 250, 300, 280, 320, 350, 400],
+              backgroundColor: 'rgba(75, 192, 192, 0.2)',
+              borderColor: 'rgba(75, 192, 192, 1)', 
+              borderWidth: 2,
+              fill: true,
+              tension: 0.4 
+            }]
+          },
+          options: {
+            responsive: true,
+            scales: {
+              y: {
+                beginAtZero: true
+              }
+            }
+          }
+        });
+      </script>
+      
+    <script src="main.js"></script>
+</body>
+</html>

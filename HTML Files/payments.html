@@ -12,6 +12,16 @@
 </head>
 
 <body>
+    <!-- big big popup  -->
+    <div class="bigbigpopup display_none">
+        <div class="orderplaceddiv">
+            <div class="headdddd">
+                Congrats, your order has been placed!
+            </div>
+            <div onclick="popupcomeandgo(); location.reload();" class="close"><i class="fa-solid fa-xmark"></i></div>
+            <div class="orermore"><p><a href="../index.html">Explore other Items! </a></p></div>
+        </div>               
+    </div>
     <!-- HEADER STARTS -->
     <header>
         <!-- NAVIGATION BAR STARTS -->
@@ -20,11 +30,11 @@
         <!-- NAV LINKS -->
         <nav>
             <ul class="nav_links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="HTML Files/Wel_BrewHev.html">About</a></li>
-                <li><a href="HTML Files/Online_Order.html">Order</a></li>
-                <li><a href="HTML Files/Uni_Gifts.html">Gift</a></li>
-                <li><a href="HTML Files/Offers.html">Offers</a></li>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../HTML Files/Wel_BrewHev.html">About</a></li>
+                <li><a href="../HTML Files/Online_Order.html">Order</a></li>
+                <li><a href="../HTML Files/Uni_Gifts.html">Gift</a></li>
+                <li><a href="../HTML Files/Offers.html">Offers</a></li>
             </ul>
         </nav>
 
@@ -120,6 +130,9 @@
                         <div class="add" onclick="document.querySelector('.ifclickedtonewadd').classList.remove('display_none')">
                             <p1>Add</p1>
                         </div>
+                        <div class="action-button">
+                            <button type="button" onclick="paymentopen2()" class="verify-button">Proceed</button>
+                        </div>
 
                     </div>
                     <div class="ifclickedadd ifclickedtonewadd display_none">
@@ -151,7 +164,7 @@
                 </div>
 
             <div class="status_your_foodyone display_none status">
-                <div class="container_status">
+                <div class="container_status paymentmethod">
 
                     <div class="header_address">
                         <p1>Select Your Payment Method</p1>
@@ -168,20 +181,20 @@
                                     <p class="instruction">Please enter your debit card details</p>
 
                                     <div class="form-group">
-                                        <input type="text" id="cardNumber" placeholder="Card Number" class="form-input">
+                                        <input type="number" id="debitcardnumber" placeholder="Card Number" class="form-input">
                                     </div>
 
                                     <div class="form-row">
                                         <div class="form-group half">
-                                            <input type="text" id="expiryDate" placeholder="MM/YY" class="form-input">
+                                            <input type="text" id="dexpiryDate" placeholder="MM/YY" class="form-input">
                                         </div>
                                         <div class="form-group half">
-                                            <input type="text" id="cvv" placeholder="CVV" class="form-input">
+                                            <input type="number" id="cvv" placeholder="CVV" class="form-input">
                                         </div>
                                     </div>
 
                                     <div class="action-button">
-                                        <button type="button" class="verify-button">Proceed</button>
+                                        <button type="button" onclick="paymentopen()" class="verify-button">Proceed</button>
                                     </div>
 
                                     <p class="helper-text">Your card details are securely encrypted</p>
@@ -202,20 +215,20 @@
                                     <p class="instruction">Please enter your credit card details</p>
 
                                     <div class="form-group">
-                                        <input type="text" id="cardNumber" placeholder="Card Number" class="form-input">
+                                        <input type="number" id="creditcardnumber" placeholder="Card Number" class="form-input">
                                     </div>
 
                                     <div class="form-row">
                                         <div class="form-group half">
-                                            <input type="text" id="expiryDate" placeholder="MM/YY" class="form-input">
+                                            <input type="text" id="cexpiryDate" placeholder="MM/YY" class="form-input">
                                         </div>
                                         <div class="form-group half">
-                                            <input type="text" id="cvv" placeholder="CVV" class="form-input">
+                                            <input type="number" id="cvv" placeholder="CVV" class="form-input">
                                         </div>
                                     </div>
 
                                     <div class="action-button">
-                                        <button type="button" class="verify-button">Proceed</button>
+                                        <button type="button" onclick="paymentopen()" class="verify-button">Proceed</button>
                                     </div>
 
                                     <p class="helper-text">Your card details are securely encrypted</p>
@@ -236,11 +249,11 @@
                                     <p class="instruction">Please enter your UPI ID here</p>
 
                                     <div class="form-group">
-                                        <input type="text" id="cardNumber" placeholder="UPI id..." class="form-input">
+                                        <input type="text" id="UPI_IDD" placeholder="UPI id..." class="form-input">
                                     </div>
 
                                     <div class="action-button">
-                                        <button type="button" class="verify-button">Proceed</button>
+                                        <button type="button" onclick="paymentopen()" class="verify-button">Proceed</button>
                                     </div>
                                 </div>
                             </div>
@@ -257,7 +270,7 @@
                             <div class="ifcheckedcodpod ">
                                 <div class="option-content">
                                     <div class="action-button">
-                                        <button type="button" class="verify-button">Proceed</button>
+                                        <button type="button" onclick="paymentopen()" class="verify-button">Proceed</button>
                                     </div>
                                 </div>
                             </div>
@@ -269,17 +282,27 @@
             </div>
 
             <div class="status_payments display_none status">
-
-            </div>
-
-            <div class="status_favourates status display_none">
-                <div class="container_status fav_cont ">
-                    <div class="image_fav"></div>
-                    <div class="header_fav">
-                        <p343>Click on the HEART icon on the food to add it here!
+                <div class="container_status paymentreviewstatus">
+                    <div class="seladdress selectedthings">
+                        <div class="headdd"><p> Selected Address </p></div>
+                        <div class="address-container ">
+                            <div class="address-content">
+                                <h2>sdf Garg</h2>
+                                <p>5410, CAT 1, G/F, MHC, MMJ, CHD, CHANDIGARH, CHANDIGARH, 160101, India</p>
+                                <p>Phone number: 7814941384</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="selpayment selectedthings">
+                        <div class="headdd"><p>Nothing Selected</p></div>
+                    </div>
+                    
+                    <div onclick="popupcomeandgo()" class="placeorder">
+                        <div class="placee">Place Order!</div>
                     </div>
                 </div>
             </div>
+
 
 
 
@@ -291,55 +314,10 @@
                         </div>     
                         <div class="items item1">
                             <div class="item">
-                                <p>itesdfgsdfgdsfgdsfgm  here! </p>
+                                <p>Name  here! </p>
                             </div>
                             <div class="itemprice">
                                 <p>$ 23</p>
-                            </div>
-                        </div>
-
-                        <div class="items item1">
-                            <div class="item">
-                                <p>item  here! </p>
-                            </div>
-                            <div class="itemprice">
-                                <p>$ 23</p>
-                            </div>
-                        </div>
-
-                        <div class="items item1">
-                            <div class="item">
-                                <p>dfsdgfsfg </p>
-                            </div>
-                            <div class="itemprice">
-                                <p>$ 23</p>
-                            </div>
-                        </div>
-
-                        <div class="items item1">
-                            <div class="item">
-                                <p>item  here! </p>
-                            </div>
-                            <div class="itemprice">
-                                <p>$ 23</p>
-                            </div>
-                        </div>
-
-                        <div class="items item1">
-                            <div class="item">
-                                <p>item  here! </p>
-                            </div>
-                            <div class="itemprice">
-                                <p>$ 23</p>
-                            </div>
-                        </div>
-                        
-                        <div class="total">
-                            <div class="headddd">
-                                <p1>Total</p1>
-                            </div>
-                            <div class="sumpri">
-                                <p1>Rs. 23232</p1>
                             </div>
                         </div>
 

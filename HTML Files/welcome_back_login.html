@@ -92,9 +92,9 @@
         <h2>Welcome Back</h2>
         <form action="/submit_form" method="post">
             <label for="email">Email</label>
-            <input type="email" id="email" name="email" required>
+            <input type="email" id="adminemail" name="email" required>
             <label for="password">Password</label>
-            <input type="password" id="password" name="password" required>
+            <input type="password" id="adminpassword" name="password" required>
             <div class="remember-me">
                 <input type="checkbox" id="remember" name="remember">
                 <label for="remember">Remember me</label>
@@ -104,12 +104,13 @@
                 <a href="#">Forgot password?</a>
             </div>
             <a href="Landing_Page_2.html">
-            <button type="submit">Login</button>
+            <button type="submit" class="submitbtn">Login</button>
             </a>
         </form>
     </div>
 </p>
 <script> window.chtlConfig = { chatbotId: "9744794937" } </script>
 <script async data-id="9744794937" id="chatling-embed-script" type="text/javascript" src="https://chatling.ai/js/embed.js"></script>
+<script type="module" src="../JS Files/adminlogin.js"></script>
 </body>
 </html>

@@ -25,14 +25,15 @@ document.querySelector(".submitbtn").addEventListener("click", function (e) {
   e.preventDefault();
   console.log("Work");
 
-  let email = document.querySelector("#email").value;
-  let password = document.querySelector("#password").value;
+  let email = document.querySelector("#adminemail").value;
+  let password = document.querySelector("#adminpassword").value;
 
   signInWithEmailAndPassword(auth, email, password)
     .then((userCredential) => {
       const user = userCredential.user;
       alert("Welcome User");
-      window.location.href = "../index.html"; 
+      window.location.href = "../HTML Files/main_dashboard.html"; 
+
     })
     .catch((error) => {
         const errorCode = error.code;

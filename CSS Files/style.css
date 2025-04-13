@@ -79,7 +79,7 @@ form.example input[type=text] {
 
 
 .full-cup{
-    background-image: url(../Assets/full.png);
+    background-image: url(../Assets/full-trans.png);
     background-size: cover;
     background-repeat: none;
     height: 95px;

@@ -130,7 +130,7 @@ form.example input[type=text] {
     width: 91px;
     height: 73px;
     padding: 15px;
-    margin-left: 111px;
+    margin-left: 177px;
     margin-top: 1px;
     flex-wrap: wrap;
     mix-blend-mode: multiply;
@@ -500,3 +500,7 @@ footer {
   .content {
     padding: 20px;
   }
+
+
+
+

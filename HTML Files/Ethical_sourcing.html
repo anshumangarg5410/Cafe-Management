@@ -366,6 +366,48 @@
         }
 
 
+  
+        /* bootstrapwali css override for navbar! */
+
+        input {
+            line-height: normal;
+            /* ya koi bhi specific value jaise 1.2, 1.5 etc */
+        }
+
+        dl,
+        ol,
+        ul {
+            margin-bottom: 0px;
+            padding-left: 0px;
+        }
+
+        form.example input[type=text] {
+            width: 500px;
+        }
+
+        /* cart ki css */
+
+        .cartlogo {
+            cursor: pointer;
+            width: 91px;
+            height: 73px;
+            padding: 15px;
+            margin-left: 177px;
+            margin-top: 1px;
+            flex-wrap: wrap;
+            mix-blend-mode: multiply;
+        }
+
+        /* cup ko thoda left kra */
+
+        .empty-cup,
+        .full-cup,
+        .half-cup {
+            margin-left: 1000px !important;
+        } 
+        
+
+
         /* end of navbar */
     </style>
 </head>
@@ -381,7 +423,7 @@
             <ul class="nav_links">
                 <li><a href="../index.html">Home</a></li>
                 <li><a href="../HTML Files/Wel_BrewHev.html">About</a></li>
-                <li><a href="../HTML Files/Online_Order.html">Order</a></li>
+                <!-- <li><a href="../HTML Files/Online_Order.html">Order</a></li> -->
                 <li><a href="../HTML Files/Uni_Gifts.html">Gift</a></li>
                 <li><a href="../HTML Files/Offers.html">Offers</a></li>
             </ul>
@@ -396,7 +438,7 @@
         <div class="full-cup empty"></div>
         <div class="half-cup empty "></div>
         <div class="empty-cup"></div>
-
+        <a href="HTML Files/Cart.html"> <img class="cartlogo" src="../Assets/cartogolrot.png" alt="cartlogo">
         <!-- SIGN IN AND SIGN UP FORMS -->
         <div class="nav_extras">
             <button><a href="../HTML Files/role_sel.html" target="_blank"> Sign in </a></button>

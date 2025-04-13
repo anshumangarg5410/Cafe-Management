@@ -14,7 +14,7 @@
             align-items: center;
             height: 100vh;
             margin: 0;
-            background-image: url(back.jpg);
+            background-image: url(back.jpg);    
             background-size: fill;
             background-attachment: fixed;
             fill-opacity: inherit;
@@ -83,15 +83,18 @@
 <body>
     <div class="container">
         <h2>Sign Up</h2>
-        <form action="/submit_form" method="post">
+        <!-- action="/submit_form" -->
+        <form>
             <label for="email">Email</label>
             <input type="email" id="email" name="email" required>
             <label for="password">Password</label>
             <input type="password" id="password" name="password" required>
             <label for="password">Confirm Password</label>
-            <input type="password" id="password" name="password" required>            
-            <button type="submit">Sign In</button>
+            <input type="password" id="passwordfinal" name="passwordfinal" required>            
+            <button type="submit" class="submitbtn">Sign In</button>
         </form>
     </div>
+
+    <script type="module" src="../JS Files/register.js"></script>
 </body>
 </html>

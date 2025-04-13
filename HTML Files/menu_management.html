@@ -5,19 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cafe Dashboard</title>
     <!-- LINKING CSS FILES -->
-    <link rel="stylesheet" href="order.css">
+    <link rel="stylesheet" href="../CSS Files/dashborinorder.css">
     <!-- LINKING BOXICONS -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
   <video autoplay muted loop id="bg-video">
-    <source src="(384) Coffee Cup Steam (Smoke) Simulation - In Blender - YouTube.mp4" type="video/mp4">
+    <source src="../Assets/(384) Coffee Cup Steam (Smoke) Simulation - In Blender - YouTube.mp4" type="video/mp4">
   </video>
     <nav class="sidebar close">
         <header>
             <div class="image-text">
                 <span>
-                    <img src="logo.png" alt="logo" style="mix-blend-mode: multiply;">
+                    <img src="../Assets/dashboardlogo.png" alt="logo" style="mix-blend-mode: multiply;">
                 </span>
                 <div class="text header-text">
                     <span class="name">Brew Heaven</span>
@@ -100,52 +100,17 @@
             <span class="badge">3</span>
           </div>
           <div class="avatar">
-            <img src="Assets/account.jpeg" alt="Avatar" />
+            <img src="../Assets/account.jpeg" alt="Avatar" />
           </div>
         </div>
       </div>
-      <div class="stats">
-        <!-- Card 1 -->
-        <div class="card">
-          <div class="card-content">
-            <p class="card-value">Completed</p>
-            <p class="card-title">&emsp;200 Orders</p>
-            <p class="card-sub">&emsp;↑12.5% from last year</p>
-          </div>
-        </div>
-
-        <!-- Card 2 -->
-        <div class="card">
-            <div class="card-content">
-                <p class="card-value">Processing</p>
-                <p class="card-title">&emsp;50 Orders</p>
-                <p class="card-sub">&emsp;↑12.5% from yesterday</p>
-              </div>
-        </div>
-
-        <!-- Card 3 -->
-        <div class="card">
-            <div class="card-content">
-                <p class="card-value">Pending</p>
-                <p class="card-title">&emsp;20 Orders</p>
-                <p class="card-sub">&emsp;↑12.5% from yesterday</p>
-              </div>
-        </div>
-
-        <!-- Card 4 -->
-        <div class="card">
-            <div class="card-content">
-                <p class="card-value">Cancelled</p>
-                <p class="card-title">&emsp;15 Orders</p>
-                <p class="card-sub">&emsp;⬇10.5% from yesterday</p>
-              </div>
-        </div>
+      
       
     
         <!-- Orders List Section -->
-<div class="card-2">
+<div class="card-2" style="margin-left: 120px; margin-top: 35px; height: 450px;">
     <div class="section-header">
-      <h2>Orders List</h2>
+      <h2>Menu Management</h2>
       <span>View All ›</span>
     </div>
   
@@ -153,105 +118,105 @@
       <table class="order-table">
         <thead>
           <tr>
-            <th>Order ID</th>
-            <th>Date and Time</th>
-            <th>Customer</th>
-            <th>Items</th>
-            <th>Total</th>
-            <th>Payment</th>
+            <th>Product Code</th>
+            <th>Product Name</th>
+            <th>Product Category</th>
+            <th>Price</th>
+            <th>Vendor</th>
             <th>Status</th>
+            <th>Orders Handled</th>
             <th>Actions</th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <td>#1024</td>
-            <td>Apr 12, 2025 10:24 AM</td>
-            <td>Emma L.</td>
-            <td>Latte, Croissant</td>
-            <td>$9.50</td>
-            <td>Card</td>
-            <td><span class="status complete">Completed</span></td>
+            <td>French Toast</td>
+            <td>Breakfast</td>
+            <td>$25</td>
+            <td>New York</td>
+            <td>Active</td>
+            <td><span class="status complete">Active</span></td>
             <td><button class="view-btn">View</button></td>
           </tr>
           <tr>
             <td>#1025</td>
-            <td>Apr 12, 2025 11:00 AM</td>
-            <td>Liam W.</td>
-            <td>Espresso</td>
-            <td>$3.00</td>
-            <td>Cash</td>
-            <td><span class="status complete">Completed</span></td>
+            <td>Burrito</td>
+            <td>Breakfast</td>
+            <td>$20</td>
+            <td>Canada</td>
+            <td>Out of Stock</td>
+            <td><span class="status complete">Active</span></td>
             <td><button class="view-btn">View</button></td>
           </tr>
           <tr>
             <td>#1025</td>
-            <td>Apr 12, 2025 11:00 AM</td>
-            <td>Liam W.</td>
-            <td>Espresso</td>
-            <td>$3.00</td>
-            <td>Cash</td>
-            <td><span class="status pending">Pending</span></td>
+            <td>Bagels</td>
+            <td>Lunch</td>
+            <td>$30</td>
+            <td>Orlando</td>
+            <td>Active</td>
+            <td><span class="status pending">Low on Stock</span></td>
             <td><button class="view-btn">View</button></td>
           </tr>
           <tr>
             <td>#1025</td>
-            <td>Apr 12, 2025 11:00 AM</td>
-            <td>Liam W.</td>
-            <td>Espresso</td>
-            <td>$3.00</td>
-            <td>Cash</td>
-            <td><span class="status Processing">Processing</span></td>
+            <td>Avacado Toast</td>
+            <td>Breakfast</td>
+            <td>$35</td>
+            <td>Dubai</td>
+            <td>Active</td>
+            <td><span class="status pending">Low on Stock</span></td>
             <td><button class="view-btn">View</button></td>
           </tr>
           <tr>
             <td>#1025</td>
-            <td>Apr 12, 2025 11:00 AM</td>
-            <td>Liam W.</td>
-            <td>Espresso</td>
-            <td>$3.00</td>
-            <td>Cash</td>
-            <td><span class="status Cancelled">Cancelled</span></td>
+            <td>Americano</td>
+            <td>Drinks</td>
+            <td>$20</td>
+            <td>London</td>
+            <td>Out of Stock</td>
+            <td><span class="status Cancelled">Out of Stock</span></td>
             <td><button class="view-btn">View</button></td>
           </tr>
           <tr>
             <td>#1025</td>
-            <td>Apr 12, 2025 11:00 AM</td>
-            <td>Liam W.</td>
-            <td>Espresso</td>
-            <td>$3.00</td>
-            <td>Cash</td>
-            <td><span class="status complete">Completed</span></td>
+            <td>Pancakes</td>
+            <td>Breakfast</td>
+            <td>$25</td>
+            <td>America</td>
+            <td>Active</td>
+            <td><span class="status complete">Active</span></td>
             <td><button class="view-btn">View</button></td>
           </tr>
           <tr>
             <td>#1025</td>
-            <td>Apr 12, 2025 11:00 AM</td>
-            <td>Liam W.</td>
-            <td>Espresso</td>
-            <td>$3.00</td>
-            <td>Cash</td>
-            <td><span class="status complete">Completed</span></td>
+            <td>Cappacino</td>
+            <td>Drinks</td>
+            <td>$35</td>
+            <td>India</td>
+            <td>Break</td>
+            <td><span class="status complete">Active</span></td>
             <td><button class="view-btn">View</button></td>
           </tr>
           <tr>
             <td>#1025</td>
-            <td>Apr 12, 2025 11:00 AM</td>
-            <td>Liam W.</td>
-            <td>Espresso</td>
-            <td>$3.00</td>
-            <td>Cash</td>
-            <td><span class="status complete">Completed</span></td>
+            <td>Waffles</td>
+            <td>Breakfast</td>
+            <td>$18</td>
+            <td>Australia</td>
+            <td>Active</td>
+            <td><span class="status complete">Active</span></td>
             <td><button class="view-btn">View</button></td>
           </tr>
           <tr>
             <td>#1025</td>
-            <td>Apr 12, 2025 11:00 AM</td>
-            <td>Liam W.</td>
-            <td>Espresso</td>
-            <td>$3.00</td>
-            <td>Cash</td>
-            <td><span class="status complete">Completed</span></td>
+            <td>Omlet</td>
+            <td>Breakfast</td>
+            <td>$25</td>
+            <td>America</td>
+            <td>Active</td>
+            <td><span class="status complete">Active</span></td>
             <td><button class="view-btn">View</button></td>
           </tr>
         </tbody>
@@ -262,6 +227,6 @@
         </div>
     </div>
         
-    <script src="main.js"></script>
+    <script src="../JS Files/main.js"></script>
 </body>
 </html>

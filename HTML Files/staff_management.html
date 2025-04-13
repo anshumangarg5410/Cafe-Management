@@ -5,19 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cafe Dashboard</title>
     <!-- LINKING CSS FILES -->
-    <link rel="stylesheet" href="order.css">
+    <link rel="stylesheet" href="../CSS Files/dashborinorder.css">
     <!-- LINKING BOXICONS -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
   <video autoplay muted loop id="bg-video">
-    <source src="(384) Coffee Cup Steam (Smoke) Simulation - In Blender - YouTube.mp4" type="video/mp4">
+    <source src="../Assets/(384) Coffee Cup Steam (Smoke) Simulation - In Blender - YouTube.mp4" type="video/mp4">
   </video>
     <nav class="sidebar close">
         <header>
             <div class="image-text">
                 <span>
-                    <img src="logo.png" alt="logo" style="mix-blend-mode: multiply;">
+                    <img src="../Assets/dashboardlogo.png" alt="logo" style="mix-blend-mode: multiply;">
                 </span>
                 <div class="text header-text">
                     <span class="name">Brew Heaven</span>
@@ -100,7 +100,7 @@
             <span class="badge">3</span>
           </div>
           <div class="avatar">
-            <img src="Assets/account.jpeg" alt="Avatar" />
+            <img src="../Assets/account.jpeg" alt="Avatar" />
           </div>
         </div>
       </div>
@@ -110,7 +110,7 @@
         <!-- Orders List Section -->
 <div class="card-2" style="margin-left: 120px; margin-top: 35px; height: 450px;">
     <div class="section-header">
-      <h2>Menu Management</h2>
+      <h2>Staff List</h2>
       <span>View All ›</span>
     </div>
   
@@ -118,11 +118,11 @@
       <table class="order-table">
         <thead>
           <tr>
-            <th>Product Code</th>
-            <th>Product Name</th>
-            <th>Product Category</th>
-            <th>Price</th>
-            <th>Vendor</th>
+            <th>Employee ID</th>
+            <th>Employee Name</th>
+            <th>Role&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</th>
+            <th>Contact Info</th>
+            <th>Work Schedule</th>
             <th>Status</th>
             <th>Orders Handled</th>
             <th>Actions</th>
@@ -131,92 +131,92 @@
         <tbody>
           <tr>
             <td>#1024</td>
-            <td>French Toast</td>
-            <td>Breakfast</td>
-            <td>$25</td>
-            <td>New York</td>
+            <td>Emma Lopez</td>
+            <td>Barista + Cashier</td>
+            <td>+1 (917) 555-0044</td>
+            <td>Monday – Wednesday – Friday</td>
             <td>Active</td>
-            <td><span class="status complete">Active</span></td>
+            <td><span class="status complete">Completed</span></td>
             <td><button class="view-btn">View</button></td>
           </tr>
           <tr>
             <td>#1025</td>
-            <td>Burrito</td>
-            <td>Breakfast</td>
-            <td>$20</td>
-            <td>Canada</td>
-            <td>Out of Stock</td>
-            <td><span class="status complete">Active</span></td>
-            <td><button class="view-btn">View</button></td>
-          </tr>
-          <tr>
-            <td>#1025</td>
-            <td>Bagels</td>
-            <td>Lunch</td>
-            <td>$30</td>
-            <td>Orlando</td>
-            <td>Active</td>
-            <td><span class="status pending">Low on Stock</span></td>
-            <td><button class="view-btn">View</button></td>
-          </tr>
-          <tr>
-            <td>#1025</td>
-            <td>Avacado Toast</td>
-            <td>Breakfast</td>
-            <td>$35</td>
-            <td>Dubai</td>
-            <td>Active</td>
-            <td><span class="status pending">Low on Stock</span></td>
-            <td><button class="view-btn">View</button></td>
-          </tr>
-          <tr>
-            <td>#1025</td>
-            <td>Americano</td>
-            <td>Drinks</td>
-            <td>$20</td>
-            <td>London</td>
-            <td>Out of Stock</td>
-            <td><span class="status Cancelled">Out of Stock</span></td>
-            <td><button class="view-btn">View</button></td>
-          </tr>
-          <tr>
-            <td>#1025</td>
-            <td>Pancakes</td>
-            <td>Breakfast</td>
-            <td>$25</td>
-            <td>America</td>
-            <td>Active</td>
-            <td><span class="status complete">Active</span></td>
-            <td><button class="view-btn">View</button></td>
-          </tr>
-          <tr>
-            <td>#1025</td>
-            <td>Cappacino</td>
-            <td>Drinks</td>
-            <td>$35</td>
-            <td>India</td>
+            <td>Noah Patel</td>
+            <td>Barista + Inventory Assistant</td>
+            <td>+1 (917) 555-0044</td>
+            <td>Tuesday – Thursday – Saturday</td>
             <td>Break</td>
-            <td><span class="status complete">Active</span></td>
+            <td><span class="status complete">Completed</span></td>
             <td><button class="view-btn">View</button></td>
           </tr>
           <tr>
             <td>#1025</td>
-            <td>Waffles</td>
-            <td>Breakfast</td>
-            <td>$18</td>
-            <td>Australia</td>
+            <td>Ava Nguyen</td>
+            <td>Waitstaff + Cleaning</td>
+            <td>+1 (917) 555-0044</td>
+            <td>Monday – Tuesday – Thursday</td>
             <td>Active</td>
-            <td><span class="status complete">Active</span></td>
+            <td><span class="status pending">Pending</span></td>
             <td><button class="view-btn">View</button></td>
           </tr>
           <tr>
             <td>#1025</td>
-            <td>Omlet</td>
-            <td>Breakfast</td>
-            <td>$25</td>
-            <td>America</td>
+            <td>Jack Thompson</td>
+            <td>Chef + Inventory Manager</td>
+            <td>+1 (707) 555-0912</td>
+            <td>Wednesday – Friday – Sunday</td>
             <td>Active</td>
-            <td><span class="status complete">Active</span></td>
+            <td><span class="status Processing">Processing</span></td>
+            <td><button class="view-btn">View</button></td>
+          </tr>
+          <tr>
+            <td>#1025</td>
+            <td>Lily Chen</td>
+            <td>Shift Supervisor + Barista</td>
+            <td>+1 (202) 555-0789</td>
+            <td>Weekend Only (Saturday – Sunday)</td>
+            <td>Break</td>
+            <td><span class="status Cancelled">Cancelled</span></td>
+            <td><button class="view-btn">View</button></td>
+          </tr>
+          <tr>
+            <td>#1025</td>
+            <td>Amenedial</td>
+            <td>Pastry Chef + Front of House</td>
+            <td>+1 (646) 555-1122</td>
+            <td>Full Week (Monday – Sunday)</td>
+            <td>Active</td>
+            <td><span class="status complete">Completed</span></td>
+            <td><button class="view-btn">View</button></td>
+          </tr>
+          <tr>
+            <td>#1025</td>
+            <td>Lucifer Morningstar</td>
+            <td>Manager + Social Media Coordinator</td>
+            <td>+1 (312) 555-0456</td>
+            <td>Friday – Saturday – Sunday</td>
+            <td>Break</td>
+            <td><span class="status complete">Completed</span></td>
+            <td><button class="view-btn">View</button></td>
+          </tr>
+          <tr>
+            <td>#1025</td>
+            <td>Mazikeen</td>
+            <td>Cashier + Order Dispatcher</td>
+            <td>+1 (213) 555-0234</td>
+            <td>Monday – Thursday – Saturday</td>
+            <td>Active</td>
+            <td><span class="status complete">Completed</span></td>
+            <td><button class="view-btn">View</button></td>
+          </tr>
+          <tr>
+            <td>#1025</td>
+            <td>ALinda Adams</td>
+            <td>Cleaning + Dishwashing</td>
+            <td>+1 (415) 555-0198</td>
+            <td>Monday – Wednesday – Friday</td>
+            <td>Active</td>
+            <td><span class="status complete">Completed</span></td>
             <td><button class="view-btn">View</button></td>
           </tr>
         </tbody>
@@ -227,6 +227,6 @@
         </div>
     </div>
         
-    <script src="main.js"></script>
+    <script src="../JS Files/main.js"></script>
 </body>
 </html>

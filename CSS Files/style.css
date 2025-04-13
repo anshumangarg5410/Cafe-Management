@@ -201,6 +201,16 @@ footer {
     padding: 10px;
 }
 
+.col6{
+    background-color: transparent;
+
+}
+
+.logopicapp{
+    background-color: transparent;
+    width: 250px;
+}
+
 .Testimonials {
     padding: 40px;
     background: #f1f1f1;

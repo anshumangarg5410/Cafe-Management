@@ -404,7 +404,7 @@
         <div class="full-cup empty"></div>
         <div class="half-cup empty "></div>
         <div class="empty-cup"></div>
-        <a href="HTML Files/Cart.html"> <img class="cartlogo" src="../Assets/cartogolrot.png" alt="cartlogo">
+        <a href="../HTML Files/Cart.html"> <img class="cartlogo" src="../Assets/cartogolrot.png" alt="cartlogo">
         <!-- SIGN IN AND SIGN UP FORMS -->
         <div class="nav_extras">
             <button><a href="../HTML Files/role_sel.html" target="_blank"> Sign in </a></button>
@@ -441,7 +441,7 @@
                         <h3> Coffee Shop T-Shirt</h3>
                         <p>Rep your love for coffee in style with this trendy “Support Your Local Coffee Shop” tee – perfect for casual vibes</p>
                         <div class="price">$3.99</div>
-                        <button class="btn mt-3">Add to Cart</button>
+                        <button class="btn mt-3"onclick="addToCart('Coffee Shop T-Shirt', 5.99, '../Assets/shirt.jpeg')">Add to Cart</button>
                     </div>
                 </div>
             </div>
@@ -454,7 +454,7 @@
                         <h3> Caramel Macchiato Glass Cup Set</h3>
                         <p>Elegant glassware for the perfect coffee moment. Sip your caramel macchiato in style.</p>
                         <div class="price">$4.49</div>
-                        <button class="btn mt-3">Add to Cart</button>
+                        <button class="btn mt-3"onclick="addToCart('Caramel Macchiato Glass Cup Set', 5.99, '../Assets/mug.jpeg')">Add to Cart</button>
                     </div>
                 </div>
             </div>
@@ -467,7 +467,7 @@
                         <h3>Personalized Thermos Bottles</h3>
                         <p>Keep your drinks hot or cold with these stylish, name-customized thermos flasks.</p>
                         <div class="price">$5.99</div>
-                        <button class="btn mt-3">Add to Cart</button>
+                        <button class="btn mt-3"onclick="addToCart('Personalized Thermos Bottles', 5.99, '../Assets/togo.webp')">Add to Cart</button>
                     </div>
                 </div>
             </div>
@@ -477,15 +477,14 @@
                     <span class="product-number">4</span> <!-- Badge for product number -->
                     <img src="../Assets/keychain.webp" alt="Choco lava cake">
                     <div class="p-3">
-                        <h3>Choco Lava Cake</h3>
-                        <p>Satisfy your sweet cravings with our irresistibly rich Choco Lava Cake – where every bite
-                            oozes chocolate bliss!</p>
+                        <h3>Caffeine Chic</h3>
+                        <p>For the ones who believe that coffee isn’t just a drink — it’s a mood, a moment, and a memory. </p>
                         <div class="price">$12.99</div>
-                        <button class="btn mt-3">Add to Cart</button>
+                        <button class="btn mt-3"onclick="addToCart('Caffeine Chic', 5.99, '../Assets/keychain.webp')">Add to Cart</button>
                     </div>
                 </div>
             </div>
-            <!-- Product 5 -->
+            <!-- Product 5 -->̀
             <div class="col-md-3 mb-4">
                 <div class="product-card">
                     <span class="product-number">5</span> <!-- Badge for product number -->
@@ -494,7 +493,7 @@
                         <h3>Coffee Cup Keychain</h3>
                         <p>Carry your coffee love everywhere with this cute coffee-cup-shaped keychain.</p>
                         <div class="price">$6.99</div>
-                        <button class="btn mt-3">Add to Cart</button>
+                        <button class="btn mt-3"onclick="addToCart('Coffee Cup Keychain', 5.99, '../Assets/apron.webp')">Add to Cart</button>
                     </div>
                 </div>
             </div>
@@ -507,7 +506,7 @@
                         <h3>Coffee-Themed Pillow</h3>
                         <p>Add cozy vibes to your space with this plush pillow featuring bold “COFFEE” prints.</p>
                         <div class="price">$6.99</div>
-                        <button class="btn mt-3">Add to Cart</button>
+                        <button class="btn mt-3"onclick="addToCart('Coffee-Themed Pillow', 5.99, '../Assets/bag1.jpg')">Add to Cart</button>
                     </div>
                 </div>
             </div>
@@ -520,7 +519,7 @@
                         <h3>Reusable Coffee Cup</h3>
                         <p>Sip sustainably with this cute, leak-proof reusable coffee tumbler. Great for coffee on the go.</p>
                         <div class="price">$5.99</div>
-                        <button class="btn mt-3">Add to Cart</button>
+                        <button class="btn mt-3"onclick="addToCart('Reusable Coffee Cup', 5.99, '../Assets/thermos.webp')">Add to Cart</button>
                     </div>
                 </div>
             </div>
@@ -533,7 +532,7 @@
                         <h3>Coffee Shop Cap</h3>
                         <p>Top off your look with this cool cap featuring a fun coffee-themed patch design.</p>
                         <div class="price">$5.99</div>
-                        <button class="btn mt-3">Add to Cart</button>
+                        <button class="btn mt-3"onclick="addToCart('Coffee Shop Cap', 5.99, '../Assets/cap.webp')">Add to Cart</button>
                     </div>
                 </div>
             </div>
@@ -613,6 +612,8 @@
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <!-- caffe -->
+    <script src="../JS Files/cart.js"></script>
+    <script src="../JS Files/main.js"></script>
     <script> window.chtlConfig = { chatbotId: "9744794937" } </script>
     <script async data-id="9744794937" id="chatling-embed-script" type="text/javascript" src="https://chatling.ai/js/embed.js"></script>
 </body>

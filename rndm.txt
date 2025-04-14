@@ -47,4 +47,4 @@
         
     
 
-    
+    onclick="addToCart('Capaccino', 5.99)"

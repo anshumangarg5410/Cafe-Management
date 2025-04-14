@@ -1,10 +1,11 @@
 
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
-function addToCart(name, price) {
+function addToCart(name, price, pic) {
     let item = {
         name: name,
         price: price,
+        pic: pic,
         quantity: 1
     };
 
@@ -35,7 +36,7 @@ cart.forEach((item) => {
     cartitem.classList.add("cart-item");
 
     cartitem.innerHTML = `
-        <img src="../Assets/bestseller.jpg" alt="${item.name}">
+        <img src="${item.pic}" alt="${item.name}">
         <div class="item-details">
             <h3>"${item.name}"</h3>
             <p>Price: ${item.price}</p>

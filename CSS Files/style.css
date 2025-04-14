@@ -514,7 +514,6 @@ footer {
     top: 20px;           /* Adjust top spacing */
 }
 
-/* Optional adjustments for very small screens */
 @media (max-width: 600px) {
     .full-cup,
     .half-cup,
@@ -522,6 +521,6 @@ footer {
         width: 15vw;
         height: 15vw;
         top: 10px;
-        right: 3%;
+        right: 2%;
     }
 }

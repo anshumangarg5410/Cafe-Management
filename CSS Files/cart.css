@@ -21,7 +21,7 @@ li, a, button {
 header {
   display: flex;
   align-items: center;
-  background-color: red;
+  background-color: white;
   flex-wrap: wrap;
 }
 

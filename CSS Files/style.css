@@ -509,9 +509,10 @@ footer {
     background-repeat: no-repeat;
     width: 80px;         /* Responsive width based on viewport */
     height: 80px;        /* Responsive height */
-    position: absolute;
+    position: relative;
     right: 25%;
     top: 20px; 
+    display: block;
 }
 
 @media (max-width: 600px) {

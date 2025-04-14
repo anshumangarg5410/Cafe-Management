@@ -166,7 +166,7 @@ form.example input[type=text] {
 }
 
 .lobster-regular {
-    font-family: "Lobster", sans-serif;
+    font-family: "Lobster", sans-serif;;
 }
 
 .title {
@@ -500,7 +500,3 @@ footer {
   .content {
     padding: 20px;
   }
-
-
-
-

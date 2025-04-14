@@ -116,7 +116,7 @@ form.example input[type=text] {
 }
 
 .empty{
-    display: none;
+    display: none !important;
 }
 
 

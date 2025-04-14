@@ -507,8 +507,8 @@ footer {
 .empty-cup {
     background-size: contain;
     background-repeat: no-repeat;
-    width: 50px;         /* Responsive width based on viewport */
-    height: 50px;        /* Responsive height */
+    width: 80px;         /* Responsive width based on viewport */
+    height: 80px;        /* Responsive height */
     position: absolute;
     right: 5%;           /* Position it from right instead of fixed margin */
     top: 20px;           /* Adjust top spacing */

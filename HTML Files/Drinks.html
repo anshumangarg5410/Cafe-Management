@@ -59,6 +59,7 @@
         .product-card:hover {
             transform: translateY(-10px);
             box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            overflow: hidden
         }
 
         .product-card img {
@@ -114,6 +115,7 @@
             border: none;
             cursor: pointer;
             transition: background-color 0.3s ease;
+            margin-top: auto;
         }
 
         .product-card .btn:hover {
@@ -442,7 +444,7 @@
                     <img src="../Assets/bestseller.jpg" alt="Signature Espresso">
                     <div class="p-3">
                         <h3>Bean Bliss Espresso</h3>
-                        <p>Bold, rich, and smooth – the perfect energy booster.</p>
+                        <p>Bold, rich, and smooth – the perfect energy booster.Made with original coffee beans.</p>
                         <div class="price">$3.99</div>
                         <button class="btn mt-3"     onclick="addToCart('Bean Bliss Espresso', 3.99, '../Assets/bestseller.jpg')">Add to Cart</button>
                     </div>
@@ -455,7 +457,7 @@
                     <img src="../Assets/drnks.jpg" alt="Caramel Macchiato">
                     <div class="p-3">
                         <h3>Caramel Cloud Delight</h3>
-                        <p>A dreamy fusion of espresso and caramel for sweet coffee lovers.</p>
+                        <p>A dreamy fusion of espresso and caramel for sweet coffee lovers. Perfect for you!</p>
                         <div class="price">$4.49</div>
                         <button class="btn mt-3"     onclick="addToCart('Caramel Cloud Delight', 4.49, '../Assets/drnks.jpg')">Add to Cart</button>
                     </div>
@@ -481,7 +483,7 @@
                     <img src="../Assets/caramel.jpeg" alt="Choco lava cake">
                     <div class="p-3">
                         <h3>Molten Cocoa Magic</h3>
-                        <p>Every spoonful bursts with gooey chocolate joy.</p>
+                        <p>Every spoonful bursts with gooey chocolate joy.Made with original coffee beans. Perfect for you!</p>
                         <div class="price">$12.99</div>
                         <button class="btn mt-3"onclick="addToCart('Molten Cocoa Magic', 12.99, '../Assets/caramel.jpeg')" >Add to Cart</button>
                     </div>
@@ -494,7 +496,7 @@
                     <img src="../Assets/latte.jpeg" alt="Order Online">
                     <div class="p-3">
                         <h3>BrewTown Pizza Slice</h3>
-                        <p>Perfectly crisp and cheesy, just one click away.</p>
+                        <p>Perfectly crisp and cheesy, just one click away.Made with original coffee beans.Perfect for you!</p>
                         <div class="price">$6.99</div>
                         <button class="btn mt-3"onclick="addToCart('BrewTown Pizza Slice', 6.99, '../Assets/latte.jpeg')">Add to Cart</button>
                     </div>
@@ -507,7 +509,7 @@
                     <img src="../Assets/mocha.jpeg" alt="Dine In Special">
                     <div class="p-3">
                         <h3>Creamy Brewshake</h3>
-                        <p>A smooth white sauce pasta served with your favorite brew.</p>
+                        <p>A smooth white sauce pasta served with your favorite brew.Perfect for you!</p>
                         <div class="price">$6.99</div>
                         <button class="btn mt-3"   onclick="addToCart('Creamy Brewshake', 6.99, '../Assets/mocha.jpeg')" >Add to Cart</button>
                     </div>
@@ -520,7 +522,7 @@
                     <img src="../Assets/frappe.jpeg" alt="Chocolate Cake">
                     <div class="p-3">
                         <h3>ChocoCrave Frappe</h3>
-                        <p>A luscious chocolate blend to satisfy every dessert fantasy.</p>
+                        <p>A luscious chocolate blend to satisfy every dessert fantasy. Perfect for you!</p>
                         <div class="price">$5.99</div>
                         <button class="btn mt-3"onclick="addToCart('ChocoCrave Frappe', 5.99, '../Assets/frappe.jpeg')" >Add to Cart</button>
                     </div>
@@ -533,7 +535,7 @@
                     <img src="../Assets/americano.jpeg" alt="Chocolate Cake">
                     <div class="p-3">
                         <h3>Mocha Munch Panini</h3>
-                        <p>Perfectly grilled and paired with a bold coffee companion.</p>
+                        <p>Perfectly grilled and paired with a bold coffee companion. Perfect for you!</p>
                         <div class="price">$5.99</div>
                         <button class="btn mt-3" onclick="addToCart('Mocha Munch Panini', 5.99, '../Assets/americano.jpeg')"  >Add to Cart</button>
                     </div>
@@ -543,74 +545,74 @@
     </section>
 
     <!-- Footer -->
-    <footer style="display: flex;">
-        <div class="row">
-            <div class="col1">
-                <img src="../Assets/logo.png" style=" width: 190px; height: 180px;
-                padding-left: 30px; padding-top: 30px; display: flex; margin-right: 0%;mix-blend-mode: multiply;">
-            </div>
-            <br>
-            <div class="col2">
-                <ul style="padding-left: 30px;">
-                    ABOUT US
-                    <br>
-                    <br>
-                    <li><a href="../HTML Files/Wel_BrewHev.html" target="_blank">Our Company</a></li>
-                    <li><a href="../HTML Files/Meet_Team.html" target="_blank">Our Team</a></li>
-                    <li><a href="../index.html" target="_blank">Home</a></li>
-                    <li><a href="../HTML Files/franchise.html" target="_blank">Franchise</a></li>
-                </ul>
-            </div>
-            <div class="col3">
-                <ul style="padding-left: 30px;">
-                    RESPONSIBILITY
-                    <br>
-                    <br>
-                    <li><a href="../HTML Files/Commitment.html" target="_blank">Diversity</a></li>
-                    <li><a href="../HTML Files/community.html" target="_blank">Community</a></li>
-                    <li><a href="../HTML Files/Ethical_sourcing.html" target="_blank">Ethical Sourcing</a></li>
-                    <li><a href="../HTML Files/Environmental.html" target="_blank">Environmental Ownership</a></li>
-                </ul>
-            </div>
-            <div class="col4">
-                <ul style="padding-left: 30px;">
-                    QUICK LINKS
-                    <br>
-                    <br>
-                    <li><a href="../HTML Files/Ethical_sourcing.html" target="_blank">Privacy Policy</a></li>
-                    <li><a href="../HTML Files/customer_service.html" target="_blank">Customer Service</a></li>
-                    <li><a href="../HTML Files/delievery.html" target="_blank">Delivery</a></li>
-                    <li><a href="../HTML Files/ownership.html" target="_blank">Ownership</a></li>
-                </ul>
-            </div>
-            <div class="col5">
-                <ul style="padding-left: 30px;">
-                    SOCIAL MEDIA
-                    <br>
-                    <br>
-                    <a href="https://www.facebook.com/">
-                        <img src="../Assets/facebook.png" style="width: 50px; height: 50px; mix-blend-mode: multiply;">
-                    </a>
-                    <a href="https://www.instagram.com/">
-                        <img src="../Assets/insta.jpg" style="width: 50px; height: 50px; mix-blend-mode: multiply;">
-                    </a>
-                    <a href="https://twitter.com/?lang=en">
-                        <img src="../Assets/twitter.png" style="width: 50px; height: 50px; mix-blend-mode: multiply;">
-                    </a>
-                </ul>
-            </div>
-            <div class="col6">
-                <div class="logopicapp">
-                    <a href="https://play.google.com/store/games?hl=en&pli=1" target="_blank">
-                        <img src="../Assets/appgpay.png" width="250px" height="100px" style="mix-blend-mode: multiply;">
-                    </a>
-                    <a href="https://apps.apple.com/" target="_blank">
-                        <img src="../Assets/appappplay.png" width="250px" height="80px" style="mix-blend-mode: multiply;">
-                    </a>
-                </div>
-            </div>
-        </div>
-    </footer>
+    <footer style="background-color: #dec4a1; padding: 40px 20px;">
+  <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-start; max-width: 1200px; margin: auto;">
+
+    <!-- Logo -->
+    <div style="flex: 1 1 180px; margin-bottom: 20px;">
+      <img src="../Assets/logo.png" style="width: 190px; height: 180px; mix-blend-mode: multiply;">
+    </div>
+
+    <!-- About Us -->
+    <div style="flex: 1 1 150px; margin-bottom: 20px;">
+      <ul style="list-style: none; padding: 0;">
+        <strong>ABOUT US</strong><br><br>
+        <li><a href="../HTML Files/Wel_BrewHev.html" target="_blank">Our Company</a></li>
+        <li><a href="../HTML Files/Meet_Team.html" target="_blank">Our Team</a></li>
+        <li><a href="../index.html" target="_blank">Home</a></li>
+        <li><a href="../HTML Files/franchise.html" target="_blank">Franchise</a></li>
+      </ul>
+    </div>
+
+    <!-- Responsibility -->
+    <div style="flex: 1 1 170px; margin-bottom: 20px;">
+      <ul style="list-style: none; padding: 0;">
+        <strong>RESPONSIBILITY</strong><br><br>
+        <li><a href="../HTML Files/Commitment.html" target="_blank">Diversity</a></li>
+        <li><a href="../HTML Files/community.html" target="_blank">Community</a></li>
+        <li><a href="../HTML Files/Ethical_sourcing.html" target="_blank">Ethical Sourcing</a></li>
+        <li><a href="../HTML Files/Environmental.html" target="_blank">Environmental Ownership</a></li>
+      </ul>
+    </div>
+
+    <!-- Quick Links -->
+    <div style="flex: 1 1 150px; margin-bottom: 20px;">
+      <ul style="list-style: none; padding: 0;">
+        <strong>QUICK LINKS</strong><br><br>
+        <li><a href="../HTML Files/Ethical_sourcing.html" target="_blank">Privacy Policy</a></li>
+        <li><a href="../HTML Files/customer_service.html" target="_blank">Customer Service</a></li>
+        <li><a href="../HTML Files/delievery.html" target="_blank">Delivery</a></li>
+        <li><a href="../HTML Files/ownership.html" target="_blank">Ownership</a></li>
+      </ul>
+    </div>
+
+    <!-- Social Media -->
+    <div style="flex: 1 1 150px; margin-bottom: 20px;">
+      <strong>SOCIAL MEDIA</strong><br><br>
+      <a href="https://www.facebook.com/" target="_blank">
+        <img src="../Assets/facebook.png" style="width: 40px; height: 40px; margin-right: 10px; mix-blend-mode: multiply;">
+      </a>
+      <a href="https://www.instagram.com/" target="_blank">
+        <img src="../Assets/insta.jpg" style="width: 40px; height: 40px; margin-right: 10px; mix-blend-mode: multiply;">
+      </a>
+      <a href="https://twitter.com/?lang=en" target="_blank">
+        <img src="../Assets/twitter.png" style="width: 40px; height: 40px; mix-blend-mode: multiply;">
+      </a>
+    </div>
+
+    <!-- App Store Buttons -->
+    <div style="flex: 1 1 250px; margin-bottom: 20px;">
+      <a href="https://play.google.com/store/games?hl=en&pli=1" target="_blank">
+        <img src="../Assets/appgpay.png" width="250px" height="100px" style="mix-blend-mode: multiply;">
+      </a>
+      <br><br>
+      <a href="https://apps.apple.com/" target="_blank">
+        <img src="../Assets/appappplay.png" width="250px" height="80px" style="mix-blend-mode: multiply;">
+      </a>
+    </div>
+
+  </div>
+</footer>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>

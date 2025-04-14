@@ -162,7 +162,7 @@ form.example input[type="text"] {
 }
 
 .footer {
-  background-color: grey;
+  background-color: rgba(157, 148, 148, 0.2);
 }
 
 footer {
@@ -355,7 +355,7 @@ footer {
 
 .main {
   /* background-color: #D6BEA2; */
-  background-color: grey;
+  background-color: rgba(157, 148, 148, 0.2);
   min-height: 500px;
   height: auto;
   width: 100%;
@@ -933,7 +933,7 @@ footer {
 }
 
 .titlee {
-  background-color: grey;
+  background-color: rgba(157, 148, 148, 0.2);
   height: 35px;
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;

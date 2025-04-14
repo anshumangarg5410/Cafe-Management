@@ -24,7 +24,7 @@ header {
 
 .logo {
     cursor: pointer;
-    width: 150px;
+    width: 120px;
     height: 110px;
     padding: 15px;
     flex-wrap: wrap;
@@ -69,7 +69,7 @@ form.example input[type=text] {
     padding: 10px;
     font-size: 17px;
     border: 1px solid grey;
-    width: 500px; /* Make it responsive */
+    width: 450px; /* Make it responsive */
     max-width: 2000px; /* Set max-width */
     background: #f1f1f1;
     border-radius: 50px;
@@ -127,11 +127,11 @@ form.example input[type=text] {
 
 .cartlogo {
     cursor: pointer;
-    width: 91px;
-    height: 73px;
+    width: 80px;
+    height: 70px;
     padding: 15px;
-    margin-left: 177px;
-    margin-top: 1px;
+    margin-left: 160px;
+    margin-top: 3px;
     flex-wrap: wrap;
     mix-blend-mode: multiply;
 }

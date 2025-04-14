@@ -510,8 +510,8 @@ footer {
     width: 80px;         /* Responsive width based on viewport */
     height: 80px;        /* Responsive height */
     position: absolute;
-    margin-left: 1000px;         /* Position it from right instead of fixed margin */
-    top: 20px;           /* Adjust top spacing */
+    right: 2%;
+    top: 20px; 
 }
 
 @media (max-width: 600px) {

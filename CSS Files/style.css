@@ -509,8 +509,8 @@ footer {
     background-repeat: no-repeat;
     width: 80px;         /* Responsive width based on viewport */
     height: 80px;        /* Responsive height */
-    position: relative;
-    right: 5%;           /* Position it from right instead of fixed margin */
+    position: absolute;
+    margin-left: 1000px;         /* Position it from right instead of fixed margin */
     top: 20px;           /* Adjust top spacing */
 }
 

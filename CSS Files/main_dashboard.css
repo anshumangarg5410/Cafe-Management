@@ -745,5 +745,15 @@ body.dark .switch::before{
     padding: 2rem;
     font-family: sans-serif;
   }
+  .card-3{
+    background-color: rgba(255, 255, 255, 0.56); /* semi-transparent white */
+  backdrop-filter: blur(15px); /* background blur */
+  -webkit-backdrop-filter: blur(10px); /* for Safari support */
+    border-radius: 16px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    padding: 20px;
+    width: 320px;
+    flex-grow: 1;
+  }
   
   

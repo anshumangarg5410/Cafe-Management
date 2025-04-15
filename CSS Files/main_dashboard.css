@@ -702,7 +702,9 @@ body.dark .switch::before{
     justify-content: space-between;
     padding: 10px;
     border-radius: 8px;
-    background-color: #f9f9f9;
+    background-color: rgba(255, 255, 255, 0.56); /* semi-transparent white */
+  backdrop-filter: blur(15px); /* background blur */
+  -webkit-backdrop-filter: blur(10px); /* for Safari support */
     margin-bottom: 10px;
     width: 250px;
   }
@@ -755,11 +757,6 @@ body.dark .switch::before{
     width: 320px;
     flex-grow: 1;
   }
-.conatiner-feedback{
-    background-color: rgba(255, 255, 255, 0.56); /* semi-transparent white */
-  backdrop-filter: blur(15px); /* background blur */
-  -webkit-backdrop-filter: blur(10px); /* for Safari support */
-}
     
   
   

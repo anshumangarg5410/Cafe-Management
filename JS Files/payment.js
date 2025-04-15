@@ -214,7 +214,7 @@ function onadding(){
   addressarray.push({
     id: count,
     name: name,
-    address: address,
+    adddress: address,
     phone: phone,
   })
 

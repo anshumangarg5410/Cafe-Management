@@ -38,7 +38,8 @@ document.querySelector(".submitbtn").addEventListener("click", function (e) {
       // Signed up
       const user = userCredential.user;
       // ...
-      alert("creatng accnt");
+      alert("Your Account has been Created!");
+      window.location.href = "../login.html"; 
     })
     .catch((error) => {
       const errorCode = error.code;
